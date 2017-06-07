@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="drawable_default">@mipmap/ic_launcher</drawable>
+
+    <!--Galery-->
+    <drawable name="drawable_galery_next_arrow">@drawable/slider_next</drawable>
+    <drawable name="drawable_galery_previous_arrow">@drawable/slider_previous</drawable>
+    <drawable name="drawable_galery_bubble_inactiv">@drawable/galery_point</drawable>
+    <drawable name="drawable_galery_bubble_active">@drawable/galery_point_orange</drawable>
+
+    <!--Navigation Icons-->
+    <drawable name="drawable_nav_back">@drawable/back</drawable>
+    <drawable name="drawable_nav_burger">@drawable/burgermenue</drawable>
+    <drawable name="drawable_nav_appicon">@drawable/ic_logowiedenbrueck</drawable>
+
+    <!--Navigations-Menu-Icons-->
+    <drawable name="drawable_nav_introduction_view">@drawable/drawable_default</drawable>
+    <drawable name="drawable_nav_map_view">@drawable/drawable_default</drawable>
+    <drawable name="drawable_nav_allpois_view">@drawable/drawable_default</drawable>
+    <drawable name="drawable_nav_morecontent_view">@drawable/drawable_default</drawable>
+    <drawable name="drawable_nav_help_view">@drawable/drawable_default</drawable>
+
+
+    <!--ArTourTypes-->
+    <drawable name="drawable_tour_01">@drawable/drawable_nav_appicon</drawable>
+    <drawable name="drawable_tour_02">@drawable/drawable_nav_appicon</drawable>
+    <drawable name="drawable_tour_03">@drawable/drawable_nav_appicon</drawable>
+    <drawable name="drawable_tour_04">@drawable/drawable_nav_appicon</drawable>
+    <drawable name="drawable_tour_05">@drawable/drawable_nav_appicon</drawable>
+    <drawable name="drawable_tour_06">@drawable/drawable_default</drawable>
+    <drawable name="drawable_tour_07">@drawable/drawable_default</drawable>
+    <drawable name="drawable_tour_08">@drawable/drawable_default</drawable>
+    <drawable name="drawable_tour_09">@drawable/drawable_default</drawable>
+    <drawable name="drawable_tour_10">@drawable/drawable_default</drawable>
+
+
+
+    <!--Augmentations-->
+    <drawable name="drawable_augmentation_01">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_02">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_03">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_04">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_05">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_06">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_07">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_08">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_09">@drawable/drawable_default</drawable>
+    <drawable name="drawable_augmentation_10">@drawable/drawable_default</drawable>
+
+    <!--Native Contents-->
+    <drawable name="drawable_content_01">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_02">@drawable/toggle_audio</drawable>
+    <drawable name="drawable_content_03">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_04">@drawable/toggle_ar</drawable>
+    <drawable name="drawable_content_05">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_06">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_07">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_08">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_09">@drawable/drawable_default</drawable>
+    <drawable name="drawable_content_10">@drawable/drawable_default</drawable>
+
+
+    <!--VIEWS:-->
+
+    <!--Startview-->
+    <drawable name="drawable_activity_start_splash_image">@drawable/ic_logowiedenbrueck</drawable>
+
+    <!--Mainview-->
+    <drawable name="drawable_activity_mainview_button_start_scan">@drawable/drawable_default</drawable>
+    <drawable name="drawable_activity_mainview_button_abort_scan">@drawable/drawable_default</drawable>
+    <drawable name="drawable_activity_mainview_button_stop_poi">@drawable/drawable_default</drawable>
+    <drawable name="drawable_activity_mainview_image_scan_hint">@drawable/drawable_default</drawable>
+    <drawable name="drawable_activity_mainview_fab_augmentation_help">@drawable/ic_tipps_icon</drawable>
+
+    <!--Mapview-->
+    <drawable name="drawable_activity_mapview_fab_info">@drawable/info</drawable>
+    <drawable name="drawable_activity_mapview_fab_poi_detail">@drawable/info</drawable>
+
+    <drawable name="drawable_map_arpoi_visited">@drawable/drawable_default</drawable>
+    <drawable name="drawable_map_poi_visited">@drawable/drawable_default</drawable>
+    <drawable name="drawable_map_arpoi">@drawable/drawable_default</drawable>
+    <drawable name="drawable_map_poi">@drawable/drawable_default</drawable>
+
+    <!--allpoisview-->
+    <drawable name="drawable_activity_allpoisview_detail_arrow">@drawable/list_item_unselected</drawable>
+
+    <!--poidetailview-->
+    <drawable name="drawable_activity_poidetailview_fab_map">@drawable/map_icon</drawable>
+    <drawable name="drawable_activity_poidetailview_toggle_playpause">@drawable/toggleplay</drawable>
+
+    <!--morecontentsview-->
+    <drawable name="drawable_activity_morecontents_tour_element_arrow">@drawable/list_item_unselected</drawable>
+    <drawable name="drawable_activity_morecontents_header_image">@drawable/uebersichtfuehrungen</drawable>
+
+    <!--helpview-->
+
+    <!--imperssumview-->
+
+
+</resources>

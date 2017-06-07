@@ -1,0 +1,29 @@
+[
+	{
+		"path" : "tipps/tipps_0.png",
+		"title" : "Schaust du frontal auf das Objekt?",
+		"description" : "Die Erkennung funktioniert am besten, wenn du frontal auf das Objekt schaust. Ändere gegebenenfalls deine Position."
+	},
+	{
+		"path" : "tipps/tipps_1.png",
+		"title" : "Ist das Wetter günstig?",
+		"description" : "Bei starkem Schatten, Dunkelheit, oder anderen Witterungsbedingungen wie Schnee, kann die Erkennung der Gebäude fehlschlagen. Komme gegebenenfalls zu einem späteren Zeitpunkt wieder."
+	},
+	{
+		"path" : "tipps/tipps_2.png",
+		"title" : "Befindet sich der vorgeschlagene Ausschnitt im Bild?",
+		"description" : "Stelle sicher, dass du exakt den Ausschnitt des Gebäudes scannst, der in der Vorschau angezeigt wird. Bewege dich um das Gebäude und ändere deinen Abstand zur Fassade."
+	},
+	{
+		"path" : "tipps/tipps_3.png",
+		"title" : "Wird das Gebäude verdeckt?",
+		"description" : "Die Gebäudefassaden können von diversen Gegenständen verdeckt werden. Komme gegebenenfalls zu einem späteren Zeitpunkt wieder."
+	},
+	{
+		"path" : "tipps/tipps_4.png",
+		"title" : "Ist die Kamera fokussiert?",
+		"description" : "Der Kamerafokus kann sich ungünstig verhalten. Richte deine Handy-Kamera kurz auf den Boden und versuche es erneut."
+	}
+	
+
+]

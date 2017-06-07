@@ -1,0 +1,55 @@
+[
+	{
+		"path" : "tipps/tipps_0.png",
+		"title" : "Schaust du frontal auf das Objekt?",
+		"description" : "Die Erkennung funktioniert am besten, wenn du frontal auf das Objekt schaust. Eventuell musst du dich etwas bewegen, um die Fassade gut einscannen zu können."
+	},
+	{
+		"path" : "tipps/tipps_1.png",
+		"title" : "Ist das Wetter günstig?",
+		"description" : "Bei starkem Schatten, Dunkelheit, oder anderen Witterungsbedingungen wie Schnee, kann die Erkennung der Gebäude fehlschlagen. Komme gegebenenfalls zu einem späteren Zeitpunkt wieder."
+	},
+	{
+		"path" : "tipps/tipps_2.png",
+		"title" : "Befindet sich der vorgeschlagene Ausschnitt im Bild?",
+		"description" : "Stelle sicher, dass du exakt den Ausschnitt des Gebäudes scannen, der in der Vorschau angezeigt wird. Bewege dich um das Gebäude und ändere deinen Abstand zur Fassade."
+	},
+	{
+		"path" : "tipps/tipps_3.png",
+		"title" : "Wird das Gebäude verdeckt?",
+		"description" : "Die Gebäudefassaden können von diversen Gegenständen verdeckt werden. Komme gegebenenfalls zu einem späteren Zeitpunkt wieder."
+	},
+	{
+		"path" : "tipps/tipps_4.png",
+		"title" : "Ist die Kamera fokussiert?",
+		"description" : "Der Kamerafokus kann sich ungünstig verhalten. Richte deine Handy-Kamera kurz auf den Boden und versuche es erneut."
+	},
+	{
+		"path" : "tipps/tipps_5.png",
+		"title" : "Gebäude finden",
+		"description" : "Die Jugendführung beinhaltet derzeit 16 Gebäude des historischen Stadtkerns in Wiedenbrück. Die genauen Standorte sind dem Menüpunkt „Karte“ zu finden. Alternativ kannst du dir im Kameramodus unten die Vorschaubilder der Gebäude, die gerade in deiner Nähe sind, anschauen."
+    },
+	{
+		"path" : "tipps/tipps_6.png",
+		"title" : "Haus scannen",
+		"description" : "Sobald du unmittelbar vor einem Gebäude der Stadtführung stehst, klicke bitte in dem Kameramodus auf den „Haus scannen“-Button in der Mitte."
+    },
+	{
+		"path" : "tipps/tipps_7.png",
+		"title" : "Karte",
+		"description" : "Eine Übersicht über die Gebäude der digitalen Stadtführung findest du unter dem Menüpunkt „Karte“. Rote Fähnchen markieren Häuser, die gescannt werden können, blaue zeigen Standorte und Informationen zu weiteren Sehenswürdigkeiten."
+	},	
+	{
+		"path" : "tipps/tipps_8.png",
+		"title" : "Liste der Objekte",
+		"description" : "Du kannst dir jederzeit alle Gebäude in der Liste der Objekte anschauen. Hier findest du umfangreiche Informationen und Bilder zu jedem Gebäude und kannst dir den Sprechertext nochmal anhören. Sobald du auf die Stecknadel oben rechts klickst, wird dir der jeweilige Standort auf der Karte angezeigt."
+	},
+	{
+		"path" : "tipps/tipps_9.png",
+		"title" : "Standard-Führung",
+		"description" : "Du kannst jederzeit auch wieder in die Standard-Führung wechseln, bei der insgesamt 23 Gebäude in Wiedenbrück erkundet werden können."
+	}
+	
+	
+
+]

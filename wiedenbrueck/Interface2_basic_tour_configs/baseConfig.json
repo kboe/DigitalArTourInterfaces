@@ -1,0 +1,39 @@
+{
+	"ContentTypes": [
+		{
+			"name": "TEXT",
+			"fullscreen": false,
+			"autostart" : false
+		}, 
+		{
+			"name": "AUDIO",
+			"fullscreen": false,
+			"autostart": false
+		}, 
+		{
+			"name": "GALERY",
+			"fullscreen": true,
+			"autostart": false
+		},
+		{
+			"name": "WIKITUDE_AUGMENTATION",
+			"fullscreen":true,
+			"autostart":true,
+			"tipps": "tipps/arTipps.json"
+		}
+	],
+	"ExtensionPackages": [
+		{
+			"nr":1,
+			"downloadpath":"http://apps.neulandserver.de/digitalArTour/rhw/1.zip",
+			"downloaded" : true,
+			"size":355
+		},
+		{
+			"nr":2,
+			"downloadpath":"http://apps.neulandserver.de/digitalArTour/rhw/2.zip",
+			"downloaded" : false,
+			"size":299
+		}
+	]
+}

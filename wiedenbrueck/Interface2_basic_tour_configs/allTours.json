@@ -1,0 +1,24 @@
+[
+	{
+		"name":"Stadtführung Wiedenbrück",
+		"description" : "Dies ist die Stadtführung durch den historischen Stadtkern von Wiedenbrück.",
+		"centerOfMapLat" : 51.833771,
+		"centerOfMapLong" : 8.309984,
+		"thumbnail" : "thumbnail.png",
+		"extensionPackage" : 1,
+		"introductions" : "introductions/introduction.json",
+		"baseAugmentation" : "1/baseAugmentation/augmentation.json",
+		"tipps": "tipps/tipps.json"
+	},
+	{
+		"name":"Jugendführung Wiedenbrück",
+		"description":"Die Jugendführung der Stadt Wiedenbrück ist speziell für Jugendliche vorbereitet worden.",
+		"centerOfMapLat":51.833771,
+		"centerOfMapLong":8.309984,
+		"thumbnail" : "thumbnail2.png",
+		"extensionPackage" : 2,
+		"introductions" : "introductions/introduction2.json",
+		"baseAugmentation" : "2/baseAugmentation/augmentation.json",
+		"tipps": "tipps/tipps2.json"
+	}
+]
