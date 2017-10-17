@@ -20,5 +20,16 @@
 		"introductions" : "introductions/introduction2.json",
 		"baseAugmentation" : "2/baseAugmentation/augmentation.json",
 		"tipps": "tipps/tipps2.json"
+	},
+	{
+		"name":"Stadtführung Rheda",
+		"description":"Dies ist die Stadtführung durch den historischen Stadtkern von Rheda.",
+		"centerOfMapLat":51.853789,
+		"centerOfMapLong":8.289517,
+		"thumbnail" : "thumbnail.png",
+		"extensionPackage" : 3,
+		"introductions" : "introductions/introduction1.json",
+		"baseAugmentation" : "3/baseAugmentation/augmentation.json",
+		"tipps": "tipps/tipps.json"
 	}
 ]

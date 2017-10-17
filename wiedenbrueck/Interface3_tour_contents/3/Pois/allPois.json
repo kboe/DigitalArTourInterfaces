@@ -13,39 +13,721 @@
 			{
 				"name" : "Sprecher",
 				"contentType" : "AUDIO",
-				"mediaPath" : "2/Pois/1/audio.json"
+				"mediaPath" : "3/Pois/1/audio.json"
 			},
 			{
 				"name" : "Beschreibungstext",
 				"contentType" : "TEXT",
-				"mediaPath" : "2/Pois/1/description.json"
+				"mediaPath" : "3/Pois/1/description.json"
 			},	
 			{
 				"name" : "Galery",
 				"contentType" : "GALERY",
-				"mediaPath" : "2/Pois/1/galery/galery.json" 
+				"mediaPath" : "3/Pois/1/galery/galery.json" 
 			},
 			{
 				"name" : "3dAnimation",
 				"contentType" : "WIKITUDE_AUGMENTATION",
-				"mediaPath" : "2/Pois/1/augmentation/augmentation.json"
+				"mediaPath" : "3/Pois/1/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Doktorplatz 6",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.852107,
+		"locationMapLong" : 8.292081,
+		"thumbnail" : "3/Pois/2/thumbnail.png",
+		"markerImage" : "3/Pois/2/markerImage.png",
+		"markerIds" : [
+			"marker2"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/2/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/2/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/2/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/2/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Berlinerstraﬂe 6",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.852177,
+		"locationMapLong" : 8.291794,
+		"thumbnail" : "3/Pois/3/thumbnail.png",
+		"markerImage" : "3/Pois/3/markerImage.png",
+		"markerIds" : [
+			"marker3"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/3/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/3/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/3/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/3/augmentation/augmentation.json"
 			}
 		]
 	},
 	
-
-   
-    {
-            "name" : "Herz-Jesu-Brunnen",
-            "description" : "Herz-Jesu-Brunnen von Heinrich P¸ts, am 13.06.1915 enth¸llt, gestiftet von Joseph Mellage. Um 1970 beseitigt und auf dem Kirchplatz vergraben, 1985 ausgegraben und im Pfarrgarten aufgestellt.", 
-			"locationMapLat" : 51.835436,
-            "locationMapLong" : 8.312005,
-            "thumbnail" : "2/Pois/31/thumbnail.png",
-            "markerIds" : [
-            ],
-            "contents" : [
-                    
-            ]
-    }
-
+	{
+		"name" : "Berlinerstraﬂe 22",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.85297,
+		"locationMapLong" : 8.292036,
+		"thumbnail" : "3/Pois/4/thumbnail.png",
+		"markerImage" : "3/Pois/4/markerImage.png",
+		"markerIds" : [
+			"marker4"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/4/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/4/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/4/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/4/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Groﬂer Wall 68",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.851846,
+		"locationMapLong" : 8.29349,
+		"thumbnail" : "3/Pois/5/thumbnail.png",
+		"markerImage" : "3/Pois/5/markerImage.png",
+		"markerIds" : [
+			"marker5"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/5/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/5/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/5/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/5/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Groﬂer Wall 42",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.8519,
+		"locationMapLong" : 8.289604,
+		"thumbnail" : "3/Pois/6/thumbnail.png",
+		"markerImage" : "3/Pois/6/markerImage.png",
+		"markerIds" : [
+			"marker6"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/6/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/6/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/6/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/6/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Kleine Straﬂe 9",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.85348,
+		"locationMapLong" : 8.290803,
+		"thumbnail" : "3/Pois/7/thumbnail.png",
+		"markerImage" : "3/Pois/7/markerImage.png",
+		"markerIds" : [
+			"marker7"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/7/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/7/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/7/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/7/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Rathausplatz",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.853789,
+		"locationMapLong" : 8.289517,
+		"thumbnail" : "3/Pois/8/thumbnail.png",
+		"markerImage" : "3/Pois/8/markerImage.png",
+		"markerIds" : [
+			"marker8"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/8/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/8/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/8/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/8/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Nadelstraﬂe 2",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.853281,
+		"locationMapLong" : 8.290447,
+		"thumbnail" : "3/Pois/8/thumbnail.png",
+		"markerImage" : "3/Pois/9/markerImage.png",
+		"markerIds" : [
+			"marker9"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/9/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/9/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/9/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/9/augmentation/augmentation.json"
+			}
+		]
+	},
+	
+	{
+		"name" : "Nadelstraﬂe 6",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.853125,
+		"locationMapLong" : 8.290773,
+		"thumbnail" : "3/Pois/10/thumbnail.png",
+		"markerImage" : "3/Pois/10/markerImage.png",
+		"markerIds" : [
+			"marker10"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/10/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/10/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/10/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/10/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Hoppenstraﬂe 11",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.85348,
+		"locationMapLong" : 8.293323,
+		"thumbnail" : "3/Pois/11/thumbnail.png",
+		"markerImage" : "3/Pois/11/markerImage.png",
+		"markerIds" : [
+			"marker11"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/11/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/11/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/11/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/11/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Wilhelmstraﬂe 20a",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.855208,
+		"locationMapLong" : 8.290773,
+		"thumbnail" : "3/Pois/12/thumbnail.png",
+		"markerImage" : "3/Pois/12/markerImage.png",
+		"markerIds" : [
+			"marker12"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/12/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/12/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/12/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/12/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Wilhelmstraﬂe 30",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.855268,
+		"locationMapLong" : 8.291901,
+		"thumbnail" : "3/Pois/13/thumbnail.png",
+		"markerImage" : "3/Pois/13/markerImage.png",
+		"markerIds" : [
+			"marker13"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/13/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/13/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/13/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/13/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Domhof 1",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.853125,
+		"locationMapLong" : 8.29349,
+		"thumbnail" : "3/Pois/14/thumbnail.png",
+		"markerImage" : "3/Pois/14/markerImage.png",
+		"markerIds" : [
+			"marker14"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/14/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/14/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/14/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/14/augmentation/augmentation.json"
+			}
+		]
+	},
+{
+		"name" : "Berlinerstraﬂe 57",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.854492,
+		"locationMapLong" : 8.292952,
+		"thumbnail" : "3/Pois/15/thumbnail.png",
+		"markerImage" : "3/Pois/15/markerImage.png",
+		"markerIds" : [
+			"marker15"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/15/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/15/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/15/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/15/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Rathausplatz 4",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.853744,
+		"locationMapLong" : 8.290604,
+		"thumbnail" : "3/Pois/17/thumbnail.png",
+		"markerImage" : "3/Pois/17/markerImage.png",
+		"markerIds" : [
+			"marker17"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/17/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/17/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/17/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/17/augmentation/augmentation.json"
+			}
+		]
+	},
+	
+{
+		"name" : "Wilhelmstraﬂe 39",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.85536,
+		"locationMapLong" : 8.293645,
+		"thumbnail" : "3/Pois/18/thumbnail.png",
+		"markerImage" : "3/Pois/18/markerImage.png",
+		"markerIds" : [
+			"marker18"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/18/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/18/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/18/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/18/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Steinweg 1",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.851787,
+		"locationMapLong" : 8.292825,
+		"thumbnail" : "3/Pois/19/thumbnail.png",
+		"markerImage" : "3/Pois/19/markerImage.png",
+		"markerIds" : [
+			"marker19"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/19/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/19/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/19/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/19/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Schloss Rheda",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.850929,
+		"locationMapLong" : 8.29582,
+		"thumbnail" : "3/Pois/20/thumbnail.png",
+		"markerImage" : "3/Pois/20/markerImage.png",
+		"markerIds" : [
+			"marker20"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/20/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/20/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/20/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/20/augmentation/augmentation.json"
+			}
+		]
+	},
+	
+	{
+		"name" : "Bleichh‰uschen",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.851381,
+		"locationMapLong" : 8.29414,
+		"thumbnail" : "3/Pois/20b/thumbnail.png",
+		"markerImage" : "3/Pois/20b/markerImage.png",
+		"markerIds" : [
+			"marker20b"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/20b/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/20b/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/20b/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/20b/augmentation/augmentation.json"
+			}
+		]
+	},
+	
+	{
+		"name" : "M¸hle",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.851054,
+		"locationMapLong" : 8.295441,
+		"thumbnail" : "3/Pois/20c/thumbnail.png",
+		"markerImage" : "3/Pois/20c/markerImage.png",
+		"markerIds" : [
+			"marker20c"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/20c/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/20c/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/20c/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/20c/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Steinweg 2",
+		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"locationMapLat" : 51.851688,
+		"locationMapLong" : 8.293218,
+		"thumbnail" : "3/Pois/20d/thumbnail.png",
+		"markerImage" : "3/Pois/20d/markerImage.png",
+		"markerIds" : [
+			"marker20d"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/20d/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/20d/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/20d/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/20d/augmentation/augmentation.json"
+			}
+		]
+	},
 ]
