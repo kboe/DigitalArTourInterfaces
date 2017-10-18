@@ -34,6 +34,12 @@
 			"downloadpath":"http://apps.neulandserver.de/digitalArTour/rhw/2.zip",
 			"downloaded" : false,
 			"size":299
+		},
+			{
+			"nr":3,
+			"downloadpath":"",
+			"downloaded" : false,
+			"size":
 		}
 	]
 }

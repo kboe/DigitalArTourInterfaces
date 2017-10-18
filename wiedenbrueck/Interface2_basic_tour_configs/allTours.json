@@ -28,7 +28,7 @@
 		"centerOfMapLong":8.289517,
 		"thumbnail" : "thumbnail.png",
 		"extensionPackage" : 3,
-		"introductions" : "introductions/introduction1.json",
+		"introductions" : "introductions/introduction3.json",
 		"baseAugmentation" : "3/baseAugmentation/augmentation.json",
 		"tipps": "tipps/tipps.json"
 	}

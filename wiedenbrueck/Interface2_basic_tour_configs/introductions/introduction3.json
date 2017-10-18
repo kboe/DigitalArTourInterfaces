@@ -1,0 +1,29 @@
+[
+	{
+		"path" : "introductions/introduction_0.png",
+		"title" : "Herzlich Willkommen!",
+		"description" : "Bei der digitalen Stadtführung können Sie den historischen Stadtkern von Rheda auf eigene Faust erkunden. Dabei werden die verschiedensten Informationen an den Gebäuden dargestellt, um mehr über die Vergangenheit der Stadt zu erfahren."
+	},
+	{
+		"path" : "introductions/introduction_1.png",
+		"title" : "Häuser scannen",
+		"description" : "Nutzen Sie den \" Haus scannen \"-Button, wenn Sie unmittelbar vor einem GebÃ¤ude der StadtfÃ¼hrugn stehen. Die Vorschaufunktion unten zeigt vorher den GebÃ¤ude-Ausschnitt an, der hierfür eingescannt werden soll."		
+	},
+	{
+		"path" : "introductions/introduction_2.png",
+		"title" : "Inhalte betrachten",
+		"description" : "Sobald das Einscannen eines Hauses erfolgreich war, erscheinen auf Ihrem Bildschirm Informationen und Elemente zu dem jeweiligen Gebäude. Es gibt zu jedem GebÃ¤ude einen Informationstext, den dazugehörigen Sprecher sowie Bildergalerien oder Videos."	
+	},
+	{
+		"path" : "introductions/introduction_3.png",
+		"title" : "Kartenfunktion",
+		"description" : "Eine Ü?bersicht über die GebÃ¤ude der digitalen Stadtführung finden Sie unter dem Menüppunkt \"Karte\". Rote Fähnchen markieren Häuser, die gescannt werden können, blaue zeigen Standorte und Informationen zu weiteren Sehenswürdigkeiten."	
+	},
+	{
+		"path" : "introductions/introduction_4.png",
+		"title" : "Hinweise",
+		"description" : "Die Stadt Rheda-wiedenbrück verfügt über den kostenlosen WLAN-Hotspot \"KreisGT.freifunk.net\" Für die Audio-Wiedergabe empfehlen wir Kopfhörer, diese sind aber nicht zwingend erforderlich. Die App funktiont am besten bei Tageslicht!"
+	}
+	
+
+]
