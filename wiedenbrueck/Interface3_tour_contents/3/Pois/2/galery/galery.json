@@ -1,33 +1,38 @@
 [
 	{
 		"path" : "3/Pois/2/galery/galery_2_0.png",
-		"title" : "",
-		"description" : ""	
+		"title" : "Doktorplatz 6",
+		"description" : "Gaststätte Neuhaus 1910: Frau Auguste Johanne Heißmann geb. Siekmann, Köchin Frau Ummelmann, Hausherrin Sophie Neuhaus geb. Haase mit Sohn Heinrich, Mieterin Frau Bernhardine Ummelmann, geb. Hartmann mit Tochter Helene, Hausherr Dietrich Neuhaus mit Sohn Hugo."	
 	},
 	{
 		"path" : "3/Pois/2/galery/galery_2_1.png",
-		"title" : "",
-		"description" : ""	
+		"title" : "Doktorplatz 6",
+		"description" : "Steinweg zum Schloss um 1920, heute Doktorplatz. Rechts Gaststätte Neuhaus."	
 	},
 	{
 		"path" : "3/Pois/2/galery/galery_2_2.png",
-		"title" : "",
-		"description" : ""	
+		"title" : "Doktorplatz 6",
+		"description" : "Gaststätte Neuhaus 1930."	
 	},
 	{
 		"path" : "3/Pois/2/galery/galery_2_3.png",
-		"title" : "",
-		"description" : ""	
+		"title" : "Doktorplatz 6",
+		"description" : "Doktorplatz 1971, links Gaststätte Neuhaus."	
 	},
 	{
 		"path" : "3/Pois/2/galery/galery_2_4.png",
-		"title" : "",
-		"description" : ""	
+		"title" : "Doktorplatz 6",
+		"description" : "Luftbild Doktorplatz 1975. Die Schlossstraße gibt es erst seit Anfang der 1980er Jahre."	
 	},
 	{
-		"path" : "3/Pois/2/galery/galery_2_5.png",
-		"title" : "",
-		"description" : ""	
+		"path" : "3/Pois/2/galery/galery_2_7.png",
+		"title" : "Doktorplatz 6",
+		"description" : "Neue Gütersloher Zeitung vom 26.08.1892."	
+	},
+	{
+		"path" : "3/Pois/2/galery/galery_2_8.png",
+		"title" : "Doktorplatz 6",
+		"description" : "Der Bote an der Ems vom 03.09.1892."	
 	}
 	
 ]
