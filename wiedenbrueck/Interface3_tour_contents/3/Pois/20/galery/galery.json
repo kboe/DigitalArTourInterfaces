@@ -1,16 +1,16 @@
 [
 	{
-		"path" : "3/Pois/20/galery/galery_20_0.jpg",
+		"path" : "3/Pois/20/galery/galery_20_0.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Luftbild Schloss mit Vorburg nach 2000."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_1.jpg",
+		"path" : "3/Pois/20/galery/galery_20_1.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Postkarte Steinweg mit Eingang zum Schloss, links die Mühle."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_2.jpg",
+		"path" : "3/Pois/20/galery/galery_20_2.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Postkarte Rückseite Schloss mit Kapellenturm."	
 	},
@@ -25,22 +25,22 @@
 		"description" : "Schlossturm und Zufahrt um 1930."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_5.jpg",
+		"path" : "3/Pois/20/galery/galery_20_5.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Schlossinnenhof um 1930, links der barocke Haupttrakt von 1745/47, rechts der Galerieflügel von 1612."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_6.jpg",
+		"path" : "3/Pois/20/galery/galery_20_6.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Landschaftszimmer „Vue de la Suisse“ 1810."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_7.jpg",
+		"path" : "3/Pois/20/galery/galery_20_7.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Detail rechts aus dem Landschaftszimmer „Vue de la Suisse“."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_8.jpg",
+		"path" : "3/Pois/20/galery/galery_20_8.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Landschaftszimmer „Vue de la Suisse“ 1810."	
 	},
@@ -50,27 +50,27 @@
 		"description" : "Detail links aus dem Landschaftszimmer „Vue de la Suisse."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_10.jpg",
+		"path" : "3/Pois/20/galery/galery_20_10.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Treppenhaus mit Ahnengalerie um 1940."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_11.jpg",
+		"path" : "3/Pois/20/galery/galery_20_11.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Kinderschlitten im Schloss"	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_12.jpg",
+		"path" : "3/Pois/20/galery/galery_20_12.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Eingang zur Schlosskapelle (Foto W. Koch)."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_13.jpg",
+		"path" : "3/Pois/20/galery/galery_20_13.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Innenraum der Schlosskapelle (Foto W. Koch)."	
 	},
 	{
-		"path" : "3/Pois/20/galery/galery_20_14.jpg",
+		"path" : "3/Pois/20/galery/galery_20_14.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Treppenaufgang in der Schlosskapelle (Foto W. Koch)."	
 	},
@@ -83,6 +83,11 @@
 		"path" : "3/Pois/20/galery/galery_20_16.png",
 		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
 		"description" : "Schlossmühle um 1930."	
+	},
+	{
+		"path" : "3/Pois/20/galery/galery_20_17.png",
+		"title" : "Schloss Rheda u.a. Orangerie, Mühle",
+		"description" : "Ölmühle um 1930."	
 	}
 	
 	
