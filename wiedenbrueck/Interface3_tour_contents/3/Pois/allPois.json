@@ -97,8 +97,7 @@
 				"mediaPath" : "3/Pois/3/augmentation/augmentation.json"
 			}
 		]
-	},
-	
+	},	
 	{
 		"name" : "Berlinerstraﬂe 22",
 		"description" : "Altes Amtsgericht",
@@ -269,7 +268,7 @@
 		"description" : "Grustat",
 		"locationMapLat" : 51.853281,
 		"locationMapLong" : 8.290447,
-		"thumbnail" : "3/Pois/8/thumbnail.JPG",
+		"thumbnail" : "3/Pois/9/thumbnail.JPG",
 		"markerImage" : "3/Pois/9/markerImage.png",
 		"markerIds" : [
 			"marker9"
