@@ -1,10 +1,10 @@
 [
 	{
 		"name" : "Doktorplatz 5",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "M¸nze, 1. Apotheke",
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
-		"thumbnail" : "3/Pois/1/thumbnail.png",
+		"thumbnail" : "3/Pois/1/thumbnail.JPG",
 		"markerImage" : "3/Pois/1/markerImage.png",
 		"markerIds" : [
 			"marker1"
@@ -34,10 +34,10 @@
 	},
 	{
 		"name" : "Doktorplatz 6",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Neuhaus",
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
-		"thumbnail" : "3/Pois/2/thumbnail.png",
+		"thumbnail" : "3/Pois/2/thumbnail.JPG",
 		"markerImage" : "3/Pois/2/markerImage.png",
 		"markerIds" : [
 			"marker2"
@@ -67,10 +67,10 @@
 	},
 	{
 		"name" : "Berlinerstraﬂe 6",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Hotel, El Greco",
 		"locationMapLat" : 51.852177,
 		"locationMapLong" : 8.291794,
-		"thumbnail" : "3/Pois/3/thumbnail.png",
+		"thumbnail" : "3/Pois/3/thumbnail.JPG",
 		"markerImage" : "3/Pois/3/markerImage.png",
 		"markerIds" : [
 			"marker3"
@@ -101,10 +101,10 @@
 	
 	{
 		"name" : "Berlinerstraﬂe 22",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Altes Amtsgericht",
 		"locationMapLat" : 51.85297,
 		"locationMapLong" : 8.292036,
-		"thumbnail" : "3/Pois/4/thumbnail.png",
+		"thumbnail" : "3/Pois/4/thumbnail.JPG",
 		"markerImage" : "3/Pois/4/markerImage.png",
 		"markerIds" : [
 			"marker4"
@@ -134,10 +134,10 @@
 	},
 	{
 		"name" : "Groﬂer Wall 68",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Heiringhoff",
 		"locationMapLat" : 51.851846,
 		"locationMapLong" : 8.29349,
-		"thumbnail" : "3/Pois/5/thumbnail.png",
+		"thumbnail" : "3/Pois/5/thumbnail.JPG",
 		"markerImage" : "3/Pois/5/markerImage.png",
 		"markerIds" : [
 			"marker5"
@@ -167,10 +167,10 @@
 	},
 	{
 		"name" : "Groﬂer Wall 42",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "u.a. Gastst‰tte Kurve, Roggenkamp",
 		"locationMapLat" : 51.8519,
 		"locationMapLong" : 8.289604,
-		"thumbnail" : "3/Pois/6/thumbnail.png",
+		"thumbnail" : "3/Pois/6/thumbnail.JPG",
 		"markerImage" : "3/Pois/6/markerImage.png",
 		"markerIds" : [
 			"marker6"
@@ -200,10 +200,10 @@
 	},
 	{
 		"name" : "Kleine Straﬂe 9",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Wilms, Blomberg",
 		"locationMapLat" : 51.85348,
 		"locationMapLong" : 8.290803,
-		"thumbnail" : "3/Pois/7/thumbnail.png",
+		"thumbnail" : "3/Pois/7/thumbnail.JPG",
 		"markerImage" : "3/Pois/7/markerImage.png",
 		"markerIds" : [
 			"marker7"
@@ -233,10 +233,10 @@
 	},
 	{
 		"name" : "Rathausplatz",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "",
 		"locationMapLat" : 51.853789,
 		"locationMapLong" : 8.289517,
-		"thumbnail" : "3/Pois/8/thumbnail.png",
+		"thumbnail" : "3/Pois/8/thumbnail.JPG",
 		"markerImage" : "3/Pois/8/markerImage.png",
 		"markerIds" : [
 			"marker8"
@@ -266,10 +266,10 @@
 	},
 	{
 		"name" : "Nadelstraﬂe 2",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Grustat",
 		"locationMapLat" : 51.853281,
 		"locationMapLong" : 8.290447,
-		"thumbnail" : "3/Pois/8/thumbnail.png",
+		"thumbnail" : "3/Pois/8/thumbnail.JPG",
 		"markerImage" : "3/Pois/9/markerImage.png",
 		"markerIds" : [
 			"marker9"
@@ -300,10 +300,10 @@
 	
 	{
 		"name" : "Nadelstraﬂe 6",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Frisch-Linnhoff",
 		"locationMapLat" : 51.853125,
 		"locationMapLong" : 8.290773,
-		"thumbnail" : "3/Pois/10/thumbnail.png",
+		"thumbnail" : "3/Pois/10/thumbnail.JPG",
 		"markerImage" : "3/Pois/10/markerImage.png",
 		"markerIds" : [
 			"marker10"
@@ -333,10 +333,10 @@
 	},
 	{
 		"name" : "Hoppenstraﬂe 11",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "",
 		"locationMapLat" : 51.85348,
 		"locationMapLong" : 8.293323,
-		"thumbnail" : "3/Pois/11/thumbnail.png",
+		"thumbnail" : "3/Pois/11/thumbnail.JPG",
 		"markerImage" : "3/Pois/11/markerImage.png",
 		"markerIds" : [
 			"marker11"
@@ -366,10 +366,10 @@
 	},
 	{
 		"name" : "Wilhelmstraﬂe 20a",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Weinberg-Villa",
 		"locationMapLat" : 51.855208,
 		"locationMapLong" : 8.290773,
-		"thumbnail" : "3/Pois/12/thumbnail.png",
+		"thumbnail" : "3/Pois/12/thumbnail.JPG",
 		"markerImage" : "3/Pois/12/markerImage.png",
 		"markerIds" : [
 			"marker12"
@@ -399,10 +399,10 @@
 	},
 	{
 		"name" : "Wilhelmstraﬂe 30",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Schule, Pizzeria",
 		"locationMapLat" : 51.855268,
 		"locationMapLong" : 8.291901,
-		"thumbnail" : "3/Pois/13/thumbnail.png",
+		"thumbnail" : "3/Pois/13/thumbnail.JPG",
 		"markerImage" : "3/Pois/13/markerImage.png",
 		"markerIds" : [
 			"marker13"
@@ -432,10 +432,10 @@
 	},
 	{
 		"name" : "Domhof 1",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "",
 		"locationMapLat" : 51.853125,
 		"locationMapLong" : 8.29349,
-		"thumbnail" : "3/Pois/14/thumbnail.png",
+		"thumbnail" : "3/Pois/14/thumbnail.JPG",
 		"markerImage" : "3/Pois/14/markerImage.png",
 		"markerIds" : [
 			"marker14"
@@ -465,10 +465,10 @@
 	},
 {
 		"name" : "Berlinerstraﬂe 57",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Schnitkerhaus",
 		"locationMapLat" : 51.854492,
 		"locationMapLong" : 8.292952,
-		"thumbnail" : "3/Pois/15/thumbnail.png",
+		"thumbnail" : "3/Pois/15/thumbnail.JPG",
 		"markerImage" : "3/Pois/15/markerImage.png",
 		"markerIds" : [
 			"marker15"
@@ -498,10 +498,10 @@
 	},
 	{
 		"name" : "Rathausplatz 4",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Stadtkirche",
 		"locationMapLat" : 51.853744,
 		"locationMapLong" : 8.290604,
-		"thumbnail" : "3/Pois/17/thumbnail.png",
+		"thumbnail" : "3/Pois/17/thumbnail.JPG",
 		"markerImage" : "3/Pois/17/markerImage.png",
 		"markerIds" : [
 			"marker17"
@@ -532,10 +532,10 @@
 	
 {
 		"name" : "Wilhelmstraﬂe 39",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Clemenskirche",
 		"locationMapLat" : 51.85536,
 		"locationMapLong" : 8.293645,
-		"thumbnail" : "3/Pois/18/thumbnail.png",
+		"thumbnail" : "3/Pois/18/thumbnail.JPG",
 		"markerImage" : "3/Pois/18/markerImage.png",
 		"markerIds" : [
 			"marker18"
@@ -565,10 +565,10 @@
 	},
 	{
 		"name" : "Steinweg 1",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Leser Ems",
 		"locationMapLat" : 51.851787,
 		"locationMapLong" : 8.292825,
-		"thumbnail" : "3/Pois/19/thumbnail.png",
+		"thumbnail" : "3/Pois/19/thumbnail.JPG",
 		"markerImage" : "3/Pois/19/markerImage.png",
 		"markerIds" : [
 			"marker19"
@@ -598,7 +598,7 @@
 	},
 	{
 		"name" : "Schloss Rheda",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "u.a. Orangerie, M¸hle",
 		"locationMapLat" : 51.850929,
 		"locationMapLong" : 8.29582,
 		"thumbnail" : "3/Pois/20/thumbnail.png",
@@ -699,7 +699,7 @@
 	},
 	{
 		"name" : "Steinweg 2",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
+		"description" : "Gircke",
 		"locationMapLat" : 51.851688,
 		"locationMapLong" : 8.293218,
 		"thumbnail" : "3/Pois/20d/thumbnail.png",
