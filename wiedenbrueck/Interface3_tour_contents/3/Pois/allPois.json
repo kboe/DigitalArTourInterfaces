@@ -295,8 +295,7 @@
 				"mediaPath" : "3/Pois/9/augmentation/augmentation.json"
 			}
 		]
-	},
-	
+	},	
 	{
 		"name" : "Nadelstraﬂe 6",
 		"description" : "Frisch-Linnhoff",
@@ -462,7 +461,7 @@
 			}
 		]
 	},
-{
+	{
 		"name" : "Berlinerstraﬂe 57",
 		"description" : "Schnitkerhaus",
 		"locationMapLat" : 51.854492,
@@ -728,5 +727,5 @@
 				"mediaPath" : "3/Pois/20d/augmentation/augmentation.json"
 			}
 		]
-	},
+	}
 ]
