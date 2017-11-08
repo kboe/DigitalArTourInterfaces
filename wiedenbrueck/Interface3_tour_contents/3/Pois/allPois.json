@@ -5,7 +5,7 @@
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
 		"thumbnail" : "3/Pois/1/thumbnail.JPG",
-		"markerImage" : "3/Pois/1/markerImage.png",
+		"markerImage" : "3/Pois/1/markerImage.jpg",
 		"markerIds" : [
 			"marker1"
 		],
@@ -38,7 +38,7 @@
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
 		"thumbnail" : "3/Pois/2/thumbnail.JPG",
-		"markerImage" : "3/Pois/2/markerImage.png",
+		"markerImage" : "3/Pois/2/markerImage.jpg",
 		"markerIds" : [
 			"marker2"
 		],
@@ -71,7 +71,7 @@
 		"locationMapLat" : 51.852177,
 		"locationMapLong" : 8.291794,
 		"thumbnail" : "3/Pois/3/thumbnail.JPG",
-		"markerImage" : "3/Pois/3/markerImage.png",
+		"markerImage" : "3/Pois/3/markerImage.jpg",
 		"markerIds" : [
 			"marker3"
 		],
@@ -104,7 +104,7 @@
 		"locationMapLat" : 51.85297,
 		"locationMapLong" : 8.292036,
 		"thumbnail" : "3/Pois/4/thumbnail.JPG",
-		"markerImage" : "3/Pois/4/markerImage.png",
+		"markerImage" : "3/Pois/4/markerImage.jpg",
 		"markerIds" : [
 			"marker4"
 		],
@@ -137,7 +137,7 @@
 		"locationMapLat" : 51.851846,
 		"locationMapLong" : 8.29349,
 		"thumbnail" : "3/Pois/5/thumbnail.JPG",
-		"markerImage" : "3/Pois/5/markerImage.png",
+		"markerImage" : "3/Pois/5/markerImage.jpg",
 		"markerIds" : [
 			"marker5"
 		],
@@ -170,7 +170,7 @@
 		"locationMapLat" : 51.8519,
 		"locationMapLong" : 8.289604,
 		"thumbnail" : "3/Pois/6/thumbnail.JPG",
-		"markerImage" : "3/Pois/6/markerImage.png",
+		"markerImage" : "3/Pois/6/markerImage.jpg",
 		"markerIds" : [
 			"marker6"
 		],
@@ -203,7 +203,7 @@
 		"locationMapLat" : 51.85348,
 		"locationMapLong" : 8.290803,
 		"thumbnail" : "3/Pois/7/thumbnail.JPG",
-		"markerImage" : "3/Pois/7/markerImage.png",
+		"markerImage" : "3/Pois/7/markerImage.JPG",
 		"markerIds" : [
 			"marker7"
 		],
@@ -236,7 +236,7 @@
 		"locationMapLat" : 51.853789,
 		"locationMapLong" : 8.289517,
 		"thumbnail" : "3/Pois/8/thumbnail.JPG",
-		"markerImage" : "3/Pois/8/markerImage.png",
+		"markerImage" : "3/Pois/8/markerImage.jpg",
 		"markerIds" : [
 			"marker8"
 		],
@@ -269,7 +269,7 @@
 		"locationMapLat" : 51.853281,
 		"locationMapLong" : 8.290447,
 		"thumbnail" : "3/Pois/9/thumbnail.JPG",
-		"markerImage" : "3/Pois/9/markerImage.png",
+		"markerImage" : "3/Pois/9/markerImage.JPG",
 		"markerIds" : [
 			"marker9"
 		],
@@ -302,7 +302,7 @@
 		"locationMapLat" : 51.853125,
 		"locationMapLong" : 8.290773,
 		"thumbnail" : "3/Pois/10/thumbnail.JPG",
-		"markerImage" : "3/Pois/10/markerImage.png",
+		"markerImage" : "3/Pois/10/markerImage.jpg",
 		"markerIds" : [
 			"marker10"
 		],
@@ -335,7 +335,7 @@
 		"locationMapLat" : 51.85348,
 		"locationMapLong" : 8.293323,
 		"thumbnail" : "3/Pois/11/thumbnail.JPG",
-		"markerImage" : "3/Pois/11/markerImage.png",
+		"markerImage" : "3/Pois/11/markerImage.JPG",
 		"markerIds" : [
 			"marker11"
 		],
@@ -368,7 +368,7 @@
 		"locationMapLat" : 51.855208,
 		"locationMapLong" : 8.290773,
 		"thumbnail" : "3/Pois/12/thumbnail.JPG",
-		"markerImage" : "3/Pois/12/markerImage.png",
+		"markerImage" : "3/Pois/12/markerImage.jpg",
 		"markerIds" : [
 			"marker12"
 		],
@@ -401,7 +401,7 @@
 		"locationMapLat" : 51.855268,
 		"locationMapLong" : 8.291901,
 		"thumbnail" : "3/Pois/13/thumbnail.JPG",
-		"markerImage" : "3/Pois/13/markerImage.png",
+		"markerImage" : "3/Pois/13/markerImage.jpg",
 		"markerIds" : [
 			"marker13"
 		],
@@ -434,7 +434,7 @@
 		"locationMapLat" : 51.853125,
 		"locationMapLong" : 8.29349,
 		"thumbnail" : "3/Pois/14/thumbnail.JPG",
-		"markerImage" : "3/Pois/14/markerImage.png",
+		"markerImage" : "3/Pois/14/markerImage.jpg",
 		"markerIds" : [
 			"marker14"
 		],
@@ -467,7 +467,7 @@
 		"locationMapLat" : 51.854492,
 		"locationMapLong" : 8.292952,
 		"thumbnail" : "3/Pois/15/thumbnail.JPG",
-		"markerImage" : "3/Pois/15/markerImage.png",
+		"markerImage" : "3/Pois/15/markerImage.jpg",
 		"markerIds" : [
 			"marker15"
 		],
@@ -500,7 +500,7 @@
 		"locationMapLat" : 51.853744,
 		"locationMapLong" : 8.290604,
 		"thumbnail" : "3/Pois/17/thumbnail.JPG",
-		"markerImage" : "3/Pois/17/markerImage.png",
+		"markerImage" : "3/Pois/17/markerImage.jpg",
 		"markerIds" : [
 			"marker17"
 		],
@@ -527,14 +527,13 @@
 			}
 		]
 	},
-	
-{
+	{
 		"name" : "Wilhelmstraße 39",
 		"description" : "Clemenskirche",
 		"locationMapLat" : 51.85536,
 		"locationMapLong" : 8.293645,
 		"thumbnail" : "3/Pois/18/thumbnail.JPG",
-		"markerImage" : "3/Pois/18/markerImage.png",
+		"markerImage" : "3/Pois/18/markerImage.jpg",
 		"markerIds" : [
 			"marker18"
 		],
@@ -567,7 +566,7 @@
 		"locationMapLat" : 51.851787,
 		"locationMapLong" : 8.292825,
 		"thumbnail" : "3/Pois/19/thumbnail.JPG",
-		"markerImage" : "3/Pois/19/markerImage.png",
+		"markerImage" : "3/Pois/19/markerImage.jpg",
 		"markerIds" : [
 			"marker19"
 		],
@@ -600,7 +599,7 @@
 		"locationMapLat" : 51.850929,
 		"locationMapLong" : 8.29582,
 		"thumbnail" : "3/Pois/20/thumbnail.png",
-		"markerImage" : "3/Pois/20/markerImage.png",
+		"markerImage" : "3/Pois/20/markerImage.jpg",
 		"markerIds" : [
 			"marker20"
 		],
@@ -627,14 +626,13 @@
 			}
 		]
 	},
-	
 	{
 		"name" : "Bleichhäuschen",
 		"description" : "Hier fehlt noch eine kurze Beschreibung",
 		"locationMapLat" : 51.851381,
 		"locationMapLong" : 8.29414,
 		"thumbnail" : "3/Pois/20b/thumbnail.png",
-		"markerImage" : "3/Pois/20b/markerImage.png",
+		"markerImage" : "3/Pois/20b/markerImage.jpg",
 		"markerIds" : [
 			"marker20b"
 		],
@@ -660,15 +658,14 @@
 				"mediaPath" : "3/Pois/20b/augmentation/augmentation.json"
 			}
 		]
-	},
-	
+	},	
 	{
 		"name" : "Mühle",
 		"description" : "Hier fehlt noch eine kurze Beschreibung",
 		"locationMapLat" : 51.851054,
 		"locationMapLong" : 8.295441,
 		"thumbnail" : "3/Pois/20c/thumbnail.png",
-		"markerImage" : "3/Pois/20c/markerImage.png",
+		"markerImage" : "3/Pois/20c/markerImage.jpg",
 		"markerIds" : [
 			"marker20c"
 		],
@@ -701,7 +698,7 @@
 		"locationMapLat" : 51.851688,
 		"locationMapLong" : 8.293218,
 		"thumbnail" : "3/Pois/20d/thumbnail.png",
-		"markerImage" : "3/Pois/20d/markerImage.png",
+		"markerImage" : "3/Pois/20d/markerImage.jpg",
 		"markerIds" : [
 			"marker20d"
 		],
