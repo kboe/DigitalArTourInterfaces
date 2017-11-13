@@ -170,9 +170,12 @@
 		"locationMapLat" : 51.8519,
 		"locationMapLong" : 8.289604,
 		"thumbnail" : "3/Pois/6/thumbnail.JPG",
-		"markerImage" : "3/Pois/6/markerImage.png",
+		"markerImage" : "3/Pois/6/markerImage.jpg",
+						
 		"markerIds" : [
-			"marker6"
+			"marker6",
+			"marker6a",
+			"marker6b"
 		],
 		"contents" : [
 			{
@@ -400,7 +403,7 @@
 		"description" : "Schule, Pizzeria",
 		"locationMapLat" : 51.855268,
 		"locationMapLong" : 8.291901,
-		"thumbnail" : "3/Pois/13/thumbnail.JPG",
+		"thumbnail" : "3/Pois/13/thumbnail.jpg",
 		"markerImage" : "3/Pois/13/markerImage.jpg",
 		"markerIds" : [
 			"marker13"
@@ -598,10 +601,14 @@
 		"description" : "u.a. Orangerie, Mühle",
 		"locationMapLat" : 51.850929,
 		"locationMapLong" : 8.29582,
-		"thumbnail" : "3/Pois/20/thumbnail.png",
+		"thumbnail" : "3/Pois/20/thumbnail.jpg",
 		"markerImage" : "3/Pois/20/markerImage.jpg",
+						
 		"markerIds" : [
-			"marker20"
+			"marker20",
+			"marker20a",
+			"marker20c",
+			"marker20d",
 		],
 		"contents" : [
 			{
@@ -626,103 +633,5 @@
 			}
 		]
 	},
-	{
-		"name" : "Bleichhäuschen",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
-		"locationMapLat" : 51.851381,
-		"locationMapLong" : 8.29414,
-		"thumbnail" : "3/Pois/20b/thumbnail.png",
-		"markerImage" : "3/Pois/20b/markerImage.jpg",
-		"markerIds" : [
-			"marker20b"
-		],
-		"contents" : [
-			{
-				"name" : "Sprecher",
-				"contentType" : "AUDIO",
-				"mediaPath" : "3/Pois/20b/audio.json"
-			},
-			{
-				"name" : "Beschreibungstext",
-				"contentType" : "TEXT",
-				"mediaPath" : "3/Pois/20b/description.json"
-			},	
-			{
-				"name" : "Galery",
-				"contentType" : "GALERY",
-				"mediaPath" : "3/Pois/20b/galery/galery.json" 
-			},
-			{
-				"name" : "3dAnimation",
-				"contentType" : "WIKITUDE_AUGMENTATION",
-				"mediaPath" : "3/Pois/20b/augmentation/augmentation.json"
-			}
-		]
-	},	
-	{
-		"name" : "Mühle",
-		"description" : "Hier fehlt noch eine kurze Beschreibung",
-		"locationMapLat" : 51.851054,
-		"locationMapLong" : 8.295441,
-		"thumbnail" : "3/Pois/20c/thumbnail.png",
-		"markerImage" : "3/Pois/20c/markerImage.jpg",
-		"markerIds" : [
-			"marker20c"
-		],
-		"contents" : [
-			{
-				"name" : "Sprecher",
-				"contentType" : "AUDIO",
-				"mediaPath" : "3/Pois/20c/audio.json"
-			},
-			{
-				"name" : "Beschreibungstext",
-				"contentType" : "TEXT",
-				"mediaPath" : "3/Pois/20c/description.json"
-			},	
-			{
-				"name" : "Galery",
-				"contentType" : "GALERY",
-				"mediaPath" : "3/Pois/20c/galery/galery.json" 
-			},
-			{
-				"name" : "3dAnimation",
-				"contentType" : "WIKITUDE_AUGMENTATION",
-				"mediaPath" : "3/Pois/20c/augmentation/augmentation.json"
-			}
-		]
-	},
-	{
-		"name" : "Steinweg 2",
-		"description" : "Gircke",
-		"locationMapLat" : 51.851688,
-		"locationMapLong" : 8.293218,
-		"thumbnail" : "3/Pois/20d/thumbnail.png",
-		"markerImage" : "3/Pois/20d/markerImage.jpg",
-		"markerIds" : [
-			"marker20d"
-		],
-		"contents" : [
-			{
-				"name" : "Sprecher",
-				"contentType" : "AUDIO",
-				"mediaPath" : "3/Pois/20d/audio.json"
-			},
-			{
-				"name" : "Beschreibungstext",
-				"contentType" : "TEXT",
-				"mediaPath" : "3/Pois/20d/description.json"
-			},	
-			{
-				"name" : "Galery",
-				"contentType" : "GALERY",
-				"mediaPath" : "3/Pois/20d/galery/galery.json" 
-			},
-			{
-				"name" : "3dAnimation",
-				"contentType" : "WIKITUDE_AUGMENTATION",
-				"mediaPath" : "3/Pois/20d/augmentation/augmentation.json"
-			}
-		]
-	}
+
 ]
