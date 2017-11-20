@@ -1,7 +1,7 @@
 ﻿[
 	{
 		"name" : "Doktorplatz 5",
-		"description" : "Die “Münze” wurde um 1610 erbaut und wurde als Apotheke und Arztpraxis genutzt.",
+		"description" : "Die “Münze”, um 1610 erbaut und als Apotheke und Arztpraxis genutzt.",
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
 		"thumbnail" : "3/Pois/1/thumbnail.JPG",
@@ -34,7 +34,7 @@
 	},
 	{
 		"name" : "Doktorplatz 6",
-		"description" : "Das Gebäude wurde 1716 von Arzt und Kaufmann Hermann Andreas Wilmans gebaut. Das Besondere am Haus ist der Fassadenschmuck, da ab 1588 calvinistisch gebaut wurde.",
+		"description" : "Das Gebäude wurde 1716 von Arzt und Kaufmann Hermann Andreas Wilmans erbaut. Das Besondere am Haus ist der Fassadenschmuck.",
 		"locationMapLat" : 51.852107,
 		"locationMapLong" : 8.292081,
 		"thumbnail" : "3/Pois/2/thumbnail.JPG",
@@ -67,7 +67,7 @@
 	},
 	{
 		"name" : "Berlinerstraße 6",
-		"description" : "Dieses Mittelflurhaus wurde von Dorothea Susanna Schwenger 1732 gebaut, seit 1997/98 dient es als Hotel und Restaurant.",
+		"description" : "Dieses Mittelflurhaus wurde von Dorothea Susanna Schwenger 1732 erbaut, seit 1997/98 dient es als Hotel und Restaurant.",
 		"locationMapLat" : 51.852177,
 		"locationMapLong" : 8.291794,
 		"thumbnail" : "3/Pois/3/thumbnail.JPG",
@@ -100,7 +100,7 @@
 	},	
 	{
 		"name" : "Berlinerstraße 22",
-		"description" : "Diese Stadtvilla wurde über mehrere Jahre errichtet. Sie ist ein neunachsiger Barockbau mit Mansarddach, klassizistischem Treppenhaus und Gewölbekeller.",
+		"description" : "Die Stadtvilla wurde über mehrere Jahre errichtet. Sie ist ein neunachsiger Barockbau mit Mansarddach, klassizistischem Treppenhaus und Gewölbekeller.",
 		"locationMapLat" : 51.85297,
 		"locationMapLong" : 8.292036,
 		"thumbnail" : "3/Pois/4/thumbnail.JPG",
@@ -166,7 +166,7 @@
 	},
 	{
 		"name" : "Großer Wall 40,42,44",
-		"description" : "Diese Häuser sind Handwerkerhäuser, vor ihnen befinden sich die verschiedenen Meisterzeichen der verschiedenen Bewohner.",
+		"description" : "Diese Häuser sind Handwerkerhäuser, vor denen sich verschiedene Meisterzeichen der Bewohner befinden.",
 		"locationMapLat" : 51.8519,
 		"locationMapLong" : 8.289604,
 		"thumbnail" : "3/Pois/6/thumbnail.JPG",
@@ -235,7 +235,7 @@
 	},
 	{
 		"name" : "Rathausplatz",
-		"description" : "Wilhelm Fontaine stifte der Stadt 1855 sein Wohnhaus zum 500. Jubiläum der Stadt, um es als Rathaus zu nutzen.",
+		"description" : "Wilhelm Fontaine stifte 1855 sein Wohnhaus zum 500. Jubiläum der Stadt, um es als Rathaus zu nutzen.",
 		"locationMapLat" : 51.853789,
 		"locationMapLong" : 8.289517,
 		"thumbnail" : "3/Pois/8/thumbnail.JPG",
@@ -268,7 +268,7 @@
 	},
 	{
 		"name" : "Nadelstraße 2",
-		"description" : "Dieses Haus wurde 1752 als Pfarrhaus von der evangelischen Gemeinde Rheda gebaut.",
+		"description" : "Dieses Haus wurde 1752 als Pfarrhaus von der evangelischen Gemeinde Rheda erbaut.",
 		"locationMapLat" : 51.853281,
 		"locationMapLong" : 8.290447,
 		"thumbnail" : "3/Pois/9/thumbnail.JPG",
@@ -334,7 +334,7 @@
 	},
 	{
 		"name" : "Hoppenstraße 11",
-		"description" : "Dies ist das schmalste Haus Rhedas. Es hat ein Außenmaß von 3,40m und wurde 1600 von Hans Billerbeck gebaut.",
+		"description" : "Das schmalste Haus in Rheda. Es hat ein Außenmaß von 3,40 m und wurde 1600 von Hans Billerbeck errichtet.",
 		"locationMapLat" : 51.85348,
 		"locationMapLong" : 8.293323,
 		"thumbnail" : "3/Pois/11/thumbnail.JPG",
@@ -400,7 +400,7 @@
 	},
 	{
 		"name" : "Wilhelmstraße 30",
-		"description" : "Dieses Fachwerktraufenhaus mit Schmuckverschieferungen wurde 1834 als erste katholische Volksschule erbaut.",
+		"description" : "Das Fachwerktraufenhaus mit Schmuckverschieferungen wurde 1834 als erste katholische Volksschule erbaut.",
 		"locationMapLat" : 51.855268,
 		"locationMapLong" : 8.291901,
 		"thumbnail" : "3/Pois/13/thumbnail.jpg",
@@ -499,7 +499,7 @@
 	},
 	{
 		"name" : "Rathausplatz 4",
-		"description" : "1326 wurde die gotische “Heilig-Blut-Kapelle” gebaut, ab 1527 die Reformation eingeführt und die Kirche wird evangelisch.",
+		"description" : "1326 wurde die gotische “Heilig-Blut-Kapelle” gebaut, ab 1527 wurde sie im Zuge der Reformation evangelisch.",
 		"locationMapLat" : 51.853744,
 		"locationMapLong" : 8.290604,
 		"thumbnail" : "3/Pois/17/thumbnail.JPG",
@@ -532,7 +532,7 @@
 	},
 	{
 		"name" : "Wilhelmstraße 39",
-		"description" : "Diese Kirche wurde 1911/13 als Pfarrkirche St. Clemens erbaut.",
+		"description" : "Diese Kirche wurde 1911/13 als Pfarrkirche St. Clemens errichtet.",
 		"locationMapLat" : 51.85536,
 		"locationMapLong" : 8.293645,
 		"thumbnail" : "3/Pois/18/thumbnail.JPG",
@@ -565,7 +565,7 @@
 	},
 	{
 		"name" : "Steinweg 1",
-		"description" : "1827 wurde dieses Haus vom Juden Abraham Leser gebaut. Seitdem Erwerb vom Fürsten 1846 wohnen dort Angestellte der Fürstenfamilie.",
+		"description" : "1827 wurde dieses Haus vom Juden Abraham Leser gebaut. Seit dem Erwerb vom Fürsten 1846 wohnen dort Angestellte der Fürstenfamilie.",
 		"locationMapLat" : 51.851787,
 		"locationMapLong" : 8.292825,
 		"thumbnail" : "3/Pois/19/thumbnail.JPG",
@@ -598,7 +598,7 @@
 	},
 	{
 		"name" : "Schloss Rheda",
-		"description" : "Das Schloss ist eine Wasserburg aus dem 12. Jhd., sie befindet sich in der Familie Bentheim-Tecklenburg.",
+		"description" : "Das Schloss ist eine Wasserburg aus dem 12. Jhd., sie befindet sich im Besitzer der Familie Bentheim-Tecklenburg.",
 		"locationMapLat" : 51.850929,
 		"locationMapLong" : 8.29582,
 		"thumbnail" : "3/Pois/20/thumbnail.jpg",
