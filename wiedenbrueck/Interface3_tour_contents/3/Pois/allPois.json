@@ -175,7 +175,8 @@
 		"markerIds" : [
 			"marker6",
 			"marker6a",
-			"marker6b"
+			"marker6b",
+			"marker6d"
 		],
 		"contents" : [
 			{
@@ -208,7 +209,8 @@
 		"thumbnail" : "3/Pois/7/thumbnail.JPG",
 		"markerImage" : "3/Pois/7/markerImage.JPG",
 		"markerIds" : [
-			"marker7"
+			"marker7",
+			"marker7b"
 		],
 		"contents" : [
 			{
@@ -607,6 +609,7 @@
 		"markerIds" : [
 			"marker20",
 			"marker20a",
+			"marker20b",
 			"marker20c",
 			"marker20d"
 		],
