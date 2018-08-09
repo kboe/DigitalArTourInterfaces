@@ -35,7 +35,7 @@ class RTTrackable extends AR.Trackable2DObject {
 }
 
 function createRotationAnimation(drawable){
-	
+
 			var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 0, 180, 600, {
 				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
 		});
@@ -49,13 +49,13 @@ function createRotationAnimation(drawable){
 					liftingAnimation2.start();
 				}
 		});
-		
+
 		return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
-	
+
 }
 
 function createRotation2Animation(drawable){
-	
+
 			var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 180, 360, 600, {
 				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
 		});
@@ -69,13 +69,13 @@ function createRotation2Animation(drawable){
 					liftingAnimation2.start();
 				}
 		});
-		
+
 		var animGroup = new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
 		animGroup.drawable = drawable;
 		animGroup.onFinish = function(){
-		
+
 			enableClick(this.drawable);
-		
+
 		}
 		return animGroup;
 }
@@ -111,7 +111,7 @@ function disableClick(drawable){
 	drawable.oldOnClickAnimations = drawable.onClickAnimations;
 	drawable.onClickAnimations = [];
 	drawable.disabledClick = true;
-	
+
 }
 
 function enableClick(drawable){
@@ -129,37 +129,37 @@ class RTMemory{
 		this.pairs = [];
 		this.successCount = 0;
 		this.positions = [
-		[0.19, -0.25, 0], 
-		[-0.26, 0.2, 0], 
-		[-0.30, 0.02, 0], 
-		[-0.12, 0.08, 0], 
-		[-0.11, -0.07, 0], 
-		[-0.11, -0.21, 0], 
-		[0.04, -0.18, 0], 
-		[0.05, -0.36, 0], 
-		[0.03, 0.15, 0], 
-		[0.17, 0.13, 0], 
-		[-0.313, -0.26, 0], 
-		[0.184, -0.02, 0], 
-		[0.324, -0.1, 0], 
+		[0.19, -0.25, 0],
+		[-0.26, 0.2, 0],
+		[-0.30, 0.02, 0],
+		[-0.12, 0.08, 0],
+		[-0.11, -0.07, 0],
+		[-0.11, -0.21, 0],
+		[0.04, -0.18, 0],
+		[0.05, -0.36, 0],
+		[0.03, 0.15, 0],
+		[0.17, 0.13, 0],
+		[-0.313, -0.26, 0],
+		[0.184, -0.02, 0],
+		[0.324, -0.1, 0],
 		[0.319, 0.05, 0]];
-		
+
 		for(var j = 0; j<this.positions.length;j++){
-		
+
 			this.positions[j][0]=this.positions[j][0]*1.5;
 			this.positions[j][1]=this.positions[j][1]*1.5;
-		
+
 		}
-		
+
 		this.allCards = [];
         this.initialCenterX = positionX;
         this.initialCenterY = positionY;
-		
+
 		for(var i = 0; i<pairs.length; i++){
 			this.pairs.push(pairs[i]);
 			this.allCards.push(this.pairs[i].card1);
 			this.allCards.push(this.pairs[i].card2);
-			
+
 			var card = this.pairs[i].card1;
 			var j = Math.random() * 100;
 				j = Math.trunc(j);
@@ -171,14 +171,14 @@ class RTMemory{
 				j = Math.trunc(j);
 			card.translate.z = 0.01*i;
 			card.positionZ = card.translate.z;
-			
+
 			var j = Math.random() * 45;
 				j = Math.trunc(j);
 			card.rotate.z = j-22.5;
 			card.disabledClick = false;
 			card.rotate.x = 0;
 			card.rotate.y = 0;
-			
+
 			var card = this.pairs[i].card2;
 			var j = Math.random() * 100;
 				j = Math.trunc(j);
@@ -189,7 +189,7 @@ class RTMemory{
 			var j = Math.random() * 100;
 				j = Math.trunc(j);
 			card.translate.z = 0.01*i+0.005;
-			
+
 			var j = Math.random() * 45;
 				j = Math.trunc(j);
 			card.rotate.z = j-22.5;
@@ -200,10 +200,10 @@ class RTMemory{
 
 			this.pairs[i].card1.memoryGame = this;
 			this.pairs[i].card2.memoryGame = this;
-			
+
 			this.pairs[i].card1.turnBackAnim = createRotation2Animation(this.pairs[i].card1,false);
 			this.pairs[i].card2.turnBackAnim = createRotation2Animation(this.pairs[i].card2,false);
-			
+
 			this.pairs[i].card1.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card1,false)));
 			this.pairs[i].card2.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card2,false)));
 			this.pairs[i].card1.onClickAdditions = function(){
@@ -216,7 +216,7 @@ class RTMemory{
 							successAnimation(this,this.partnerCard);
 						}else{
 							turnBackFunction(this,this.memoryGame.turnedCard);
-						
+
 						}
 						this.memoryGame.turnedCard = null;
 					}
@@ -238,19 +238,19 @@ class RTMemory{
 				}
 			}
 		}
-	
+
 	}
-	
+
 	turnAnimation(drawable){
 
 		liftingAnimation1.start();
 		rotationAnimation.start();
 	}
-	
+
 	turnBackAnimation(drawable){
 		this.turnAnimation(drawable);
 	}
-	
+
 	shuffleCards(){
 		this.counter = [];
 		for (var i = 0; i < 14; i++) {
@@ -275,14 +275,14 @@ class RTMemory{
 			anim.start();
 		}
 	}
-	
+
 	collectCards(){
 		for(var i = 0; i<this.allCards.length;i++){
 			var card = this.allCards[i];
 			moveBackAnim(card,1000,0,0,0);
 		}
 	}
-	
+
 	setInitialTranslatesForAllCards(){
 		for(var i = 0; i<this.allCards.length;i++){
 			var card = this.allCards[i];
@@ -291,7 +291,7 @@ class RTMemory{
 				card.translate.z = this.positions[i][2];
 		}
 	}
-	
+
 	winning(){
 	}
 
@@ -315,7 +315,7 @@ function successAnimation(card1, card2){
 		card1.memoryGame.successCount++;
 		var anim = createWinningAnimation(card1,card2);
 		anim.onFinish = function () {
-			setTimeout(function () {			
+			setTimeout(function () {
 				card1.removeFromCam();
 				card2.removeFromCam();
 			}, 1500);
@@ -323,12 +323,12 @@ function successAnimation(card1, card2){
 		setTimeout(function () {
 			anim.start();
 		}, 500);
-		
+
 
 		if(card1.memoryGame.successCount == card1.memoryGame.pairs.length){
 				setTimeout(function () {
 					card1.memoryGame.winning();
-				}, 2500);	
+				}, 2500);
 		}
 
 }
@@ -352,8 +352,8 @@ class RTMemoryPair{
 		this.card1.partnerCard = this.card2;
 		this.card2.partnerCard = this.card1;
 	}
-	
-	
+
+
 
 }
 
@@ -366,16 +366,16 @@ class RTMenuGroup {
         this.horizontal = horizontal;
         this.scale = scale;
     }
-    
+
     addMenuElement(drawable){
-        if (this.horizontal) {        
+        if (this.horizontal) {
             if (this.menuElements.length > 0) {
                 drawable.translate.x = this.menuElements[this.menuElements.length-1].translate.x + this.innerPadding;
                 drawable.translate.y = this.menuElements[0].translate.y;
 
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
-                
+
                 drawable.previousDragValueX = drawable.translate.x;
                 drawable.previousDragValueY = drawable.translate.y;
 
@@ -383,7 +383,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-                
+
                 drawable.scale.x = this.scale;
                 drawable.scale.y = this.scale;
 
@@ -396,7 +396,7 @@ class RTMenuGroup {
             if (this.menuElements.length > 0) {
                 drawable.translate.y = this.menuElements[this.menuElements.length-1].translate.y - this.innerPadding;
                 drawable.translate.x = this.menuElements[0].translate.x;
-                
+
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
 
@@ -407,7 +407,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-                
+
                 drawable.scale.x = this.scale;
                 drawable.scale.y = this.scale;
 
@@ -417,7 +417,7 @@ class RTMenuGroup {
                 this.menuElements.push(drawable);
             }
         }
-        
+
     }
 
 }
@@ -553,10 +553,10 @@ class RTImage extends AR.ImageDrawable {
     }
 
     onClickAdditions() {
-       
-      
-         
-        
+
+
+
+
     }
 
     onRecognitionAnimation() {
@@ -735,7 +735,7 @@ class RTModel extends AR.Model {
         }
     }
     onClickAdditions() {
-        
+
 
     }
     onLostAnimation() {
@@ -788,6 +788,7 @@ class RTVideo extends AR.VideoDrawable {
             translate: optionsJSON.translate,
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
+            isTransparent: true,
             onDragBegan: function (x, y) {
                 this.myOnDragBegan(x,y);
                 return true;
@@ -966,12 +967,12 @@ class RTVideo extends AR.VideoDrawable {
 
 
 function createAppLink(drawable, url) {
-    drawable.onClickAdditions = function () {        
+    drawable.onClickAdditions = function () {
         if (isAndroid()) {
 				document.location = "architectsdk://url_https://www." + url;
         } else {
 				window.location.href = "https://" + url;
-        }    
+        }
     }
 }
 
@@ -1073,7 +1074,7 @@ function createOpacityDownAnim(drawable,length){
     }, {
 		onFinish: function (drawable) {
 			//drawable.removeFromCam();
-			//drawable.opacity = 1;						
+			//drawable.opacity = 1;
 		}
 	});
 }
@@ -1467,23 +1468,23 @@ function createMoveToPositionAnim(drawable,length,translationX,translationY,tran
 		var destributeAnimationz = new AR.PropertyAnimation(drawable, "translate.z", drawable.translate.z, translationZ, length, {
 				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
 			});
-			
+
 		return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [destributeAnimationx, destributeAnimationy, destributeAnimationz]);
 }
 
 
 /*
 function createSequentialAppearAnim (drawables, length) {
-    
+
     var drawableVar = [];
-    
+
     for (var i = 0; i < drawables.length; i++) {
-        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);  
+        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
     }
-    
+
     //var drawable11 = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
-    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);    
-    
+    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);
+
     return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.SEQUENTIAL, [drawableVar[0], drawableVar[1]]);
 }
 */

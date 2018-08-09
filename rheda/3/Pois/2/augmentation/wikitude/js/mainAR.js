@@ -1,4 +1,4 @@
-var trackable_rhedaMarker02 = new RTTrackable("marker2");
+var trackable_rhedaMarker02 = new RTTrackable("rhedaMarker02");
 var audioaroff = new RTImage("assets/audioaroff.png",1,options_audioaroff,trackable_rhedaMarker02);
 var audioARon = new RTImage("assets/audioARon.png",1,options_audioARon,trackable_rhedaMarker02);
 var sound = new AR.Sound("assets/audio.mp3");
