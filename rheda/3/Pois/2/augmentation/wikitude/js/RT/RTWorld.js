@@ -1,12 +1,11 @@
 var allDrawables = [];
 var allVisibleDrawables = [];
 var editable = false;
-var targetCollectionResource = new AR.TargetCollectionResource("../../../../../../baseAugmentation/wikitude/assets/tracker.wtc");
+var targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc");
 var tracker = new AR.ImageTracker(targetCollectionResource);
 var trackableBasis = new AR.ImageTrackable(tracker, "*", {
     onImageRecognized: function (name) {
-        
-        //document.location = "architectsdk://modelontarget_" + name;
+        document.location = "architectsdk://modelontarget_" + name;
         for (var i = 0; i < allDrawables.length; i++) {
             if (allDrawables[i].trackable.targetName == name || allDrawables[i].trackable.targetName == "*") {
                 allDrawables[i].onImageRecognized(name);
@@ -14,7 +13,7 @@ var trackableBasis = new AR.ImageTrackable(tracker, "*", {
         }
     },
     onImageLost: function (name) {
-        //document.location = "architectsdk://modelexittarget_" + name;
+        document.location = "architectsdk://modelexittarget_" + name;
         for (var i = 0; i < allDrawables.length; i++) {
             if (allDrawables[i].trackable.targetName == name || allDrawables[i].trackable.targetName == "*") {
                 allDrawables[i].onImageLost(name);

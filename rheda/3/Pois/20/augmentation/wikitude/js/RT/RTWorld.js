@@ -1,7 +1,7 @@
 var allDrawables = [];
 var allVisibleDrawables = [];
 var editable = false;
-var targetCollectionResource = new AR.TargetCollectionResource("../../../../../../baseAugmentation/wikitude/assets/tracker.wtc");
+var targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc");
 var tracker = new AR.ImageTracker(targetCollectionResource);
 var trackableBasis = new AR.ImageTrackable(tracker, "*", {
     onImageRecognized: function (name) {
