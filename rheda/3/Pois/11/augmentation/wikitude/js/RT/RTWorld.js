@@ -465,6 +465,7 @@ class RTVideo extends AR.VideoDrawable {
             translate: optionsJSON.translate,
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
+            isTransparent:true,
             onDragBegan: function (x, y) {
                 this.myOnDragBegan(x,y);
                 return true;

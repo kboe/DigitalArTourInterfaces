@@ -44,16 +44,16 @@ class RTMenuGroup {
         this.scaleX = scaleX;
         this.scaleY = scaleY;
     }
-
+    
     addMenuElement(drawable){
-        if (this.horizontal) {
+        if (this.horizontal) {        
             if (this.menuElements.length > 0) {
                 drawable.translate.x = this.menuElements[this.menuElements.length-1].translate.x + this.innerPadding;
                 drawable.translate.y = this.menuElements[0].translate.y;
 
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
-
+                
                 drawable.previousDragValueX = drawable.translate.x;
                 drawable.previousDragValueY = drawable.translate.y;
 
@@ -61,7 +61,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-
+                
                 drawable.scale.x = this.scaleX;
                 drawable.scale.y = this.scaleY;
 
@@ -74,7 +74,7 @@ class RTMenuGroup {
             if (this.menuElements.length > 0) {
                 drawable.translate.y = this.menuElements[this.menuElements.length-1].translate.y - this.innerPadding;
                 drawable.translate.x = this.menuElements[0].translate.x;
-
+                
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
 
@@ -85,7 +85,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-
+                
                 drawable.scale.x = this.scaleX;
                 drawable.scale.y = this.scaleY;
 
@@ -95,7 +95,7 @@ class RTMenuGroup {
                 this.menuElements.push(drawable);
             }
         }
-
+        
     }
 
 }
@@ -230,10 +230,10 @@ class RTImage extends AR.ImageDrawable {
     }
 
     onClickAdditions() {
-
-
-
-
+       
+      
+         
+        
     }
 
     onRecognitionAnimation() {
@@ -412,7 +412,7 @@ class RTModel extends AR.Model {
         }
     }
     onClickAdditions() {
-
+        
 
     }
     onLostAnimation() {
@@ -465,7 +465,7 @@ class RTVideo extends AR.VideoDrawable {
             translate: optionsJSON.translate,
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
-              isTransparent: true,
+            isTransparent:true,
             onDragBegan: function (x, y) {
                 this.myOnDragBegan(x,y);
                 return true;
@@ -644,12 +644,12 @@ class RTVideo extends AR.VideoDrawable {
 
 
 function createAppLink(drawable, url) {
-    drawable.onClickAdditions = function () {
+    drawable.onClickAdditions = function () {        
         if (isAndroid()) {
 				document.location = "architectsdk://url_https://www." + url;
         } else {
 				window.location.href = "https://" + url;
-        }
+        }    
     }
 }
 
@@ -737,16 +737,16 @@ function createOpacityDownAnim(drawable,length){
 
 /*
 function createSequentialAppearAnim (drawables, length) {
-
+    
     var drawableVar = [];
-
+    
     for (var i = 0; i < drawables.length; i++) {
-        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
+        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);  
     }
-
+    
     //var drawable11 = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
-    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);
-
+    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);    
+    
     return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.SEQUENTIAL, [drawableVar[0], drawableVar[1]]);
 }
 */

@@ -24,333 +24,336 @@ var trackableBasis = new AR.ImageTrackable(tracker, "*", {
 
 
 class RTTrackable extends AR.Trackable2DObject {
-    constructor(name) {
+    constructor(name){
         super(tracker, name, {
-            onImageRecognized: function (name) {},
-            onImageLost: function (name) {}
+            onImageRecognized: function (name) {
+            },
+            onImageLost: function (name) {
+            }
         });
     }
 }
 
-function createRotationAnimation(drawable) {
-
-    var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 0, 180, 600, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var liftingAnimation1 = new AR.PropertyAnimation(drawable, "translate.z", 0, 0.3, 300, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    }, {
-        onFinish: function () {
-            var liftingAnimation2 = new AR.PropertyAnimation(drawable, "translate.z", 0.3, drawable.positionZ, 300, {
-                type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-            });
-            liftingAnimation2.start();
-        }
-    });
-
-    return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
-
+function createRotationAnimation(drawable){
+	
+			var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 0, 180, 600, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+		});
+		var liftingAnimation1 = new AR.PropertyAnimation(drawable, "translate.z", 0, 0.3, 300, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			}, {
+				onFinish: function () {
+					var liftingAnimation2 = new AR.PropertyAnimation(drawable, "translate.z", 0.3, drawable.positionZ, 300, {
+							type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+						});
+					liftingAnimation2.start();
+				}
+		});
+		
+		return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
+	
 }
 
-function createRotation2Animation(drawable) {
-
-    var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 180, 360, 600, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var liftingAnimation1 = new AR.PropertyAnimation(drawable, "translate.z", 0, 0.3, 300, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    }, {
-        onFinish: function () {
-            var liftingAnimation2 = new AR.PropertyAnimation(drawable, "translate.z", 0.3, drawable.positionZ, 300, {
-                type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-            });
-            liftingAnimation2.start();
-        }
-    });
-
-    var animGroup = new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
-    animGroup.drawable = drawable;
-    animGroup.onFinish = function () {
-
-        enableClick(this.drawable);
-
-    }
-    return animGroup;
+function createRotation2Animation(drawable){
+	
+			var rotationAnimation = new AR.PropertyAnimation(drawable, "rotate.y", 180, 360, 600, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+		});
+		var liftingAnimation1 = new AR.PropertyAnimation(drawable, "translate.z", 0, 0.3, 300, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			}, {
+				onFinish: function () {
+					var liftingAnimation2 = new AR.PropertyAnimation(drawable, "translate.z", 0.3, drawable.positionZ, 300, {
+							type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+						});
+					liftingAnimation2.start();
+				}
+		});
+		
+		var animGroup = new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [rotationAnimation, liftingAnimation1]);
+		animGroup.drawable = drawable;
+		animGroup.onFinish = function(){
+		
+			enableClick(this.drawable);
+		
+		}
+		return animGroup;
 }
 
-function createWinningAnimation(card1, card2) {
+function createWinningAnimation(card1, card2){
 
-    var winningAnimation1x = new AR.PropertyAnimation(card1, "translate.x", card1.translate.x, -0.45, 800, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var winningAnimation1y = new AR.PropertyAnimation(card1, "translate.y", card1.translate.y, 0, 800, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var winningAnimation1z = new AR.PropertyAnimation(card1, "translate.z", card1.translate.z, 0.1, 400, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
+			var winningAnimation1x = new AR.PropertyAnimation(card1, "translate.x", card1.translate.x, -0.45, 800, {
+									type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			var winningAnimation1y = new AR.PropertyAnimation(card1, "translate.y", card1.translate.y, 0, 800, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			var winningAnimation1z = new AR.PropertyAnimation(card1, "translate.z", card1.translate.z, 0.1, 400, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
 
-    var winningAnimation2x = new AR.PropertyAnimation(card2, "translate.x", card2.translate.x, -0.45, 800, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var winningAnimation2y = new AR.PropertyAnimation(card2, "translate.y", card2.translate.y, 0, 800, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var winningAnimation2z = new AR.PropertyAnimation(card2, "translate.z", card2.translate.z, 0.2, 400, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [winningAnimation1x, winningAnimation1y, winningAnimation1z, winningAnimation2x, winningAnimation2y, winningAnimation2z]);
-
-}
-
-
-function disableClick(drawable) {
-
-    drawable.oldOnClickAnimations = drawable.onClickAnimations;
-    drawable.onClickAnimations = [];
-    drawable.disabledClick = true;
-
-}
-
-function enableClick(drawable) {
-
-    drawable.onClickAnimations = drawable.oldOnClickAnimations;
-    drawable.disabledClick = false;
+			var winningAnimation2x = new AR.PropertyAnimation(card2, "translate.x", card2.translate.x, -0.45, 800, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			var winningAnimation2y = new AR.PropertyAnimation(card2, "translate.y", card2.translate.y, 0, 800, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			var winningAnimation2z = new AR.PropertyAnimation(card2, "translate.z", card2.translate.z, 0.2, 400, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [winningAnimation1x, winningAnimation1y,winningAnimation1z,winningAnimation2x,winningAnimation2y,winningAnimation2z]);
 
 }
 
 
-class RTMemory {
+function disableClick(drawable){
 
-    constructor(pairs, positionX, positionY) {
-        this.turnedCard = null;
-        this.pairs = [];
-        this.successCount = 0;
-        this.positions = [
-		[0.19, -0.25, 0],
-		[-0.26, 0.2, 0],
-		[-0.30, 0.02, 0],
-		[-0.12, 0.08, 0],
-		[-0.11, -0.07, 0],
-		[-0.11, -0.21, 0],
-		[0.04, -0.18, 0],
-		[0.05, -0.36, 0],
-		[0.03, 0.15, 0],
-		[0.17, 0.13, 0],
-		[-0.313, -0.26, 0],
-		[0.184, -0.02, 0],
-		[0.324, -0.1, 0],
+	drawable.oldOnClickAnimations = drawable.onClickAnimations;
+	drawable.onClickAnimations = [];
+	drawable.disabledClick = true;
+	
+}
+
+function enableClick(drawable){
+
+	drawable.onClickAnimations = drawable.oldOnClickAnimations;
+	drawable.disabledClick = false;
+
+}
+
+
+class RTMemory{
+
+	constructor(pairs, positionX, positionY){
+		this.turnedCard = null;
+		this.pairs = [];
+		this.successCount = 0;
+		this.positions = [
+		[0.19, -0.25, 0], 
+		[-0.26, 0.2, 0], 
+		[-0.30, 0.02, 0], 
+		[-0.12, 0.08, 0], 
+		[-0.11, -0.07, 0], 
+		[-0.11, -0.21, 0], 
+		[0.04, -0.18, 0], 
+		[0.05, -0.36, 0], 
+		[0.03, 0.15, 0], 
+		[0.17, 0.13, 0], 
+		[-0.313, -0.26, 0], 
+		[0.184, -0.02, 0], 
+		[0.324, -0.1, 0], 
 		[0.319, 0.05, 0]];
-
-        for (var j = 0; j < this.positions.length; j++) {
-
-            this.positions[j][0] = this.positions[j][0] * 1.5;
-            this.positions[j][1] = this.positions[j][1] * 1.5;
-
-        }
-
-        this.allCards = [];
+		
+		for(var j = 0; j<this.positions.length;j++){
+		
+			this.positions[j][0]=this.positions[j][0]*1.5;
+			this.positions[j][1]=this.positions[j][1]*1.5;
+		
+		}
+		
+		this.allCards = [];
         this.initialCenterX = positionX;
         this.initialCenterY = positionY;
+		
+		for(var i = 0; i<pairs.length; i++){
+			this.pairs.push(pairs[i]);
+			this.allCards.push(this.pairs[i].card1);
+			this.allCards.push(this.pairs[i].card2);
+			
+			var card = this.pairs[i].card1;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.x = 0.0005*j-0.003+this.initialCenterX;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.y = 0.0005*j-0.003+this.initialCenterY;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.z = 0.01*i;
+			card.positionZ = card.translate.z;
+			
+			var j = Math.random() * 45;
+				j = Math.trunc(j);
+			card.rotate.z = j-22.5;
+			card.disabledClick = false;
+			card.rotate.x = 0;
+			card.rotate.y = 0;
+			
+			var card = this.pairs[i].card2;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.x = 0.0005*j-0.003+this.initialCenterX;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.y = 0.0005*j-0.003+this.initialCenterY;
+			var j = Math.random() * 100;
+				j = Math.trunc(j);
+			card.translate.z = 0.01*i+0.005;
+			
+			var j = Math.random() * 45;
+				j = Math.trunc(j);
+			card.rotate.z = j-22.5;
+			card.positionZ = card.translate.z;
+			card.disabledClick = false;
+			card.rotate.x = 0;
+			card.rotate.y = 0;
 
-        for (var i = 0; i < pairs.length; i++) {
-            this.pairs.push(pairs[i]);
-            this.allCards.push(this.pairs[i].card1);
-            this.allCards.push(this.pairs[i].card2);
+			this.pairs[i].card1.memoryGame = this;
+			this.pairs[i].card2.memoryGame = this;
+			
+			this.pairs[i].card1.turnBackAnim = createRotation2Animation(this.pairs[i].card1,false);
+			this.pairs[i].card2.turnBackAnim = createRotation2Animation(this.pairs[i].card2,false);
+			
+			this.pairs[i].card1.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card1,false)));
+			this.pairs[i].card2.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card2,false)));
+			this.pairs[i].card1.onClickAdditions = function(){
+				if(!this.disabledClick){
+					disableClick(this);
+					if(this.memoryGame.turnedCard==null){
+						this.memoryGame.turnedCard = this;
+					}else{
+						if(this.memoryGame.turnedCard == this.partnerCard){
+							successAnimation(this,this.partnerCard);
+						}else{
+							turnBackFunction(this,this.memoryGame.turnedCard);
+						
+						}
+						this.memoryGame.turnedCard = null;
+					}
+				}
+			}
+			this.pairs[i].card2.onClickAdditions = function(){
+				if(!this.disabledClick){
+					disableClick(this);
+					if(this.memoryGame.turnedCard==null){
+						this.memoryGame.turnedCard = this;
+					}else{
+						if(this.memoryGame.turnedCard == this.partnerCard){
+							successAnimation(this,this.partnerCard);
+						}else{
+							turnBackFunction(this,this.memoryGame.turnedCard);
+						}
+						this.memoryGame.turnedCard = null;
+					}
+				}
+			}
+		}
+	
+	}
+	
+	turnAnimation(drawable){
 
-            var card = this.pairs[i].card1;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.x = 0.0005 * j - 0.003 + this.initialCenterX;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.y = 0.0005 * j - 0.003 + this.initialCenterY;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.z = 0.01 * i;
-            card.positionZ = card.translate.z;
-
-            var j = Math.random() * 45;
-            j = Math.trunc(j);
-            card.rotate.z = j - 22.5;
-            card.disabledClick = false;
-            card.rotate.x = 0;
-            card.rotate.y = 0;
-
-            var card = this.pairs[i].card2;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.x = 0.0005 * j - 0.003 + this.initialCenterX;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.y = 0.0005 * j - 0.003 + this.initialCenterY;
-            var j = Math.random() * 100;
-            j = Math.trunc(j);
-            card.translate.z = 0.01 * i + 0.005;
-
-            var j = Math.random() * 45;
-            j = Math.trunc(j);
-            card.rotate.z = j - 22.5;
-            card.positionZ = card.translate.z;
-            card.disabledClick = false;
-            card.rotate.x = 0;
-            card.rotate.y = 0;
-
-            this.pairs[i].card1.memoryGame = this;
-            this.pairs[i].card2.memoryGame = this;
-
-            this.pairs[i].card1.turnBackAnim = createRotation2Animation(this.pairs[i].card1, false);
-            this.pairs[i].card2.turnBackAnim = createRotation2Animation(this.pairs[i].card2, false);
-
-            this.pairs[i].card1.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card1, false)));
-            this.pairs[i].card2.onClickAnimations.push(new RTAnimation(createRotationAnimation(this.pairs[i].card2, false)));
-            this.pairs[i].card1.onClickAdditions = function () {
-                if (!this.disabledClick) {
-                    disableClick(this);
-                    if (this.memoryGame.turnedCard == null) {
-                        this.memoryGame.turnedCard = this;
-                    } else {
-                        if (this.memoryGame.turnedCard == this.partnerCard) {
-                            successAnimation(this, this.partnerCard);
-                        } else {
-                            turnBackFunction(this, this.memoryGame.turnedCard);
-
-                        }
-                        this.memoryGame.turnedCard = null;
-                    }
-                }
-            }
-            this.pairs[i].card2.onClickAdditions = function () {
-                if (!this.disabledClick) {
-                    disableClick(this);
-                    if (this.memoryGame.turnedCard == null) {
-                        this.memoryGame.turnedCard = this;
-                    } else {
-                        if (this.memoryGame.turnedCard == this.partnerCard) {
-                            successAnimation(this, this.partnerCard);
-                        } else {
-                            turnBackFunction(this, this.memoryGame.turnedCard);
-                        }
-                        this.memoryGame.turnedCard = null;
-                    }
-                }
-            }
-        }
-
-    }
-
-    turnAnimation(drawable) {
-
-        liftingAnimation1.start();
-        rotationAnimation.start();
-    }
-
-    turnBackAnimation(drawable) {
-        this.turnAnimation(drawable);
-    }
-
-    shuffleCards() {
-        this.counter = [];
-        for (var i = 0; i < 14; i++) {
-            do {
-                var j = Math.random() * 14;
-                j = Math.trunc(j);
-            } while (this.counter.indexOf(j) != -1)
-            this.counter.push(j);
-        }
-        for (var i = 0; i < this.allCards.length; i++) {
-            var card = this.allCards[i];
-            card.positionX = this.positions[this.counter[i]][0];
-            card.positionY = this.positions[this.counter[i]][1];
-            card.positionZ = card.translate.z;
-            var anim = createMoveToPositionAnim(this.allCards[i], 1000, card.positionX, card.positionY, 0);
-            anim.card = card;
-            anim.onFinish = function () {
-                this.card.translate.x = this.card.positionX;
-                this.card.translate.y = this.card.positionY;
-                this.card.translate.z = 0;
-            }
-            anim.start();
-        }
-    }
-
-    collectCards() {
-        for (var i = 0; i < this.allCards.length; i++) {
-            var card = this.allCards[i];
-            moveBackAnim(card, 1000, 0, 0, 0);
-        }
-    }
-
-    setInitialTranslatesForAllCards() {
-        for (var i = 0; i < this.allCards.length; i++) {
-            var card = this.allCards[i];
-            card.translate.x = this.positions[i][0];
-            card.translate.y = this.positions[i][1];
-            card.translate.z = this.positions[i][2];
-        }
-    }
-
-    winning() {}
-
-}
-
-function moveBackAnim(drawable, time, x, y, z) {
-    var anim = createMoveToPositionAnim(drawable, 1000, 0, 0, drawable.positionZ);
-    anim.card = drawable;
-    anim.onFinish = function () {
-        this.card.translate.x = 0;
-        this.card.translate.y = 0;
-    }
-    anim.start();
-
+		liftingAnimation1.start();
+		rotationAnimation.start();
+	}
+	
+	turnBackAnimation(drawable){
+		this.turnAnimation(drawable);
+	}
+	
+	shuffleCards(){
+		this.counter = [];
+		for (var i = 0; i < 14; i++) {
+			do {
+				var j = Math.random() * 14;
+				j = Math.trunc(j);
+			} while (this.counter.indexOf(j) != -1)
+			this.counter.push(j);
+		}
+		for(var i = 0; i<this.allCards.length;i++){
+			var card = this.allCards[i];
+			card.positionX = this.positions[this.counter[i]][0];
+			card.positionY = this.positions[this.counter[i]][1];
+			card.positionZ = card.translate.z;
+			var anim = createMoveToPositionAnim(this.allCards[i],1000,card.positionX,card.positionY,0);
+			anim.card = card;
+			anim.onFinish = function(){
+				this.card.translate.x = this.card.positionX;
+				this.card.translate.y = this.card.positionY;
+				this.card.translate.z = 0;
+			}
+			anim.start();
+		}
+	}
+	
+	collectCards(){
+		for(var i = 0; i<this.allCards.length;i++){
+			var card = this.allCards[i];
+			moveBackAnim(card,1000,0,0,0);
+		}
+	}
+	
+	setInitialTranslatesForAllCards(){
+		for(var i = 0; i<this.allCards.length;i++){
+			var card = this.allCards[i];
+				card.translate.x = this.positions[i][0];
+				card.translate.y = this.positions[i][1];
+				card.translate.z = this.positions[i][2];
+		}
+	}
+	
+	winning(){
+	}
 
 }
 
+function moveBackAnim(drawable, time, x,y,z){
+	var anim = createMoveToPositionAnim(drawable,1000,0,0,drawable.positionZ);
+	anim.card = drawable;
+	anim.onFinish = function(){
+		this.card.translate.x = 0;
+		this.card.translate.y = 0;
+	}
+	anim.start();
 
-function successAnimation(card1, card2) {
-    //alert("success: "+card1.name +" + "+card2.name);
-    card1.memoryGame.successCount++;
-    var anim = createWinningAnimation(card1, card2);
-    anim.onFinish = function () {
-        setTimeout(function () {
-            card1.removeFromCam();
-            card2.removeFromCam();
-        }, 1500);
-    };
-    setTimeout(function () {
-        anim.start();
-    }, 500);
-
-
-    if (card1.memoryGame.successCount == card1.memoryGame.pairs.length) {
-        setTimeout(function () {
-            card1.memoryGame.winning();
-        }, 2500);
-    }
 
 }
 
-function turnBackFunction(drawable1, drawable2) {
-    setTimeout(function () {
-        drawable1.turnBackAnim.start();
-        drawable2.turnBackAnim.start();
-    }, 1500);
+
+function successAnimation(card1, card2){
+		//alert("success: "+card1.name +" + "+card2.name);
+		card1.memoryGame.successCount++;
+		var anim = createWinningAnimation(card1,card2);
+		anim.onFinish = function () {
+			setTimeout(function () {			
+				card1.removeFromCam();
+				card2.removeFromCam();
+			}, 1500);
+		};
+		setTimeout(function () {
+			anim.start();
+		}, 500);
+		
+
+		if(card1.memoryGame.successCount == card1.memoryGame.pairs.length){
+				setTimeout(function () {
+					card1.memoryGame.winning();
+				}, 2500);	
+		}
 
 }
 
-class RTMemoryPair {
+function turnBackFunction(drawable1, drawable2){
+	setTimeout(function () {
+		drawable1.turnBackAnim.start();
+		drawable2.turnBackAnim.start();
+	}, 1500);
 
-    constructor(drawable1, drawable2) {
-        this.card1 = drawable1;
-        this.card2 = drawable2;
-        this.turned1 = false;
-        this.turned2 = false;
-        this.finished = false;
-        this.card1.partnerCard = this.card2;
-        this.card2.partnerCard = this.card1;
-    }
+}
 
+class RTMemoryPair{
 
+	constructor(drawable1, drawable2){
+		this.card1 = drawable1;
+		this.card2 = drawable2;
+		this.turned1 = false;
+		this.turned2 = false;
+		this.finished = false;
+		this.card1.partnerCard = this.card2;
+		this.card2.partnerCard = this.card1;
+	}
+	
+	
 
 }
 
@@ -363,16 +366,16 @@ class RTMenuGroup {
         this.horizontal = horizontal;
         this.scale = scale;
     }
-
-    addMenuElement(drawable) {
-        if (this.horizontal) {
+    
+    addMenuElement(drawable){
+        if (this.horizontal) {        
             if (this.menuElements.length > 0) {
-                drawable.translate.x = this.menuElements[this.menuElements.length - 1].translate.x + this.innerPadding;
+                drawable.translate.x = this.menuElements[this.menuElements.length-1].translate.x + this.innerPadding;
                 drawable.translate.y = this.menuElements[0].translate.y;
 
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
-
+                
                 drawable.previousDragValueX = drawable.translate.x;
                 drawable.previousDragValueY = drawable.translate.y;
 
@@ -380,7 +383,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-
+                
                 drawable.scale.x = this.scale;
                 drawable.scale.y = this.scale;
 
@@ -391,9 +394,9 @@ class RTMenuGroup {
             }
         } else {
             if (this.menuElements.length > 0) {
-                drawable.translate.y = this.menuElements[this.menuElements.length - 1].translate.y - this.innerPadding;
+                drawable.translate.y = this.menuElements[this.menuElements.length-1].translate.y - this.innerPadding;
                 drawable.translate.x = this.menuElements[0].translate.x;
-
+                
                 drawable.scale.x = this.menuElements[0].scale.x;
                 drawable.scale.y = this.menuElements[0].scale.y;
 
@@ -404,7 +407,7 @@ class RTMenuGroup {
             } else {
                 drawable.translate.x = this.anchorX;
                 drawable.translate.y = this.anchorY;
-
+                
                 drawable.scale.x = this.scale;
                 drawable.scale.y = this.scale;
 
@@ -414,7 +417,7 @@ class RTMenuGroup {
                 this.menuElements.push(drawable);
             }
         }
-
+        
     }
 
 }
@@ -436,15 +439,15 @@ class RTImage extends AR.ImageDrawable {
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
             onDragBegan: function (x, y) {
-                this.myOnDragBegan(x, y);
+                this.myOnDragBegan(x,y);
                 return true;
             },
             onDragChanged: function (x, y) {
-                this.myOnDragChanged(x, y);
+                this.myOnDragChanged(x,y);
                 return true;
             },
             onDragEnded: function (x, y) {
-                this.myOnDragEnded(x, y);
+                this.myOnDragEnded(x,y);
                 return true;
             },
             onRotationBegan: function (angleInDegrees) {
@@ -508,7 +511,10 @@ class RTImage extends AR.ImageDrawable {
 
         this.trackable = trackablename;
         this.onClick = function () {
-
+            if (this.playVideoOnClick != null) {
+                this.playVideoOnClick.play(0);
+                this.removeFromCam();
+            }
             this.onClickAdditions();
             this.onClickAnimation();
         }
@@ -530,7 +536,7 @@ class RTImage extends AR.ImageDrawable {
                 this.onRemoveFromCamAnimations[i].animation.start();
             }
         }
-        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this), 1);
+        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this),1);
         this.trackable.drawables.removeCamDrawable(this);
     }
 
@@ -547,10 +553,10 @@ class RTImage extends AR.ImageDrawable {
     }
 
     onClickAdditions() {
-
-
-
-
+       
+      
+         
+        
     }
 
     onRecognitionAnimation() {
@@ -577,52 +583,52 @@ class RTImage extends AR.ImageDrawable {
         }
     }
 
-    myOnDragBegan(x, y) {
+    myOnDragBegan(x,y){
         return true;
     }
-    myOnDragChanged(x, y) {
+    myOnDragChanged(x,y){
         return true;
     }
-    myOnDragEnded(x, y) {
+    myOnDragEnded(x,y){
         return true;
     }
-    myOnRotationBegan(angleInDegrees) {
+    myOnRotationBegan(angleInDegrees){
         return true;
     }
-    myOnRotationChanged(angleInDegrees) {
+    myOnRotationChanged(angleInDegrees){
         return true;
     }
-    myOnRotationEnded(angleInDegrees) {
+    myOnRotationEnded(angleInDegrees){
         return true;
     }
-    myOnScaleBegan(scale) {
+    myOnScaleBegan(scale){
         return true;
     }
-    myOnScaleChanged(scale) {
+    myOnScaleChanged(scale){
         return true;
     }
-    myOnScaleEnded(scale) {
+    myOnScaleEnded(scale){
         return true;
     }
 }
 
 class RTModel extends AR.Model {
 
-    constructor(path, optionsJSON, trackablename) {
+    constructor(path, optionsJSON,trackablename) {
         var values = {
             translate: optionsJSON.translate,
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
             onDragBegan: function (x, y) {
-                this.myOnDragBegan(x, y);
+                this.myOnDragBegan(x,y);
                 return true;
             },
             onDragChanged: function (x, y) {
-                this.myOnDragChanged(x, y);
+                this.myOnDragChanged(x,y);
                 return true;
             },
             onDragEnded: function (x, y) {
-                this.myOnDragEnded(x, y);
+                this.myOnDragEnded(x,y);
                 return true;
             },
             onRotationBegan: function (angleInDegrees) {
@@ -703,7 +709,7 @@ class RTModel extends AR.Model {
                 this.onRemoveFromCamAnimations[i].animation.start();
             }
         }
-        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this), 1);
+        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this),1);
         this.trackable.drawables.removeCamDrawable(this);
     }
 
@@ -729,7 +735,7 @@ class RTModel extends AR.Model {
         }
     }
     onClickAdditions() {
-
+        
 
     }
     onLostAnimation() {
@@ -746,52 +752,52 @@ class RTModel extends AR.Model {
         }
     }
 
-    myOnDragBegan(x, y) {
+    myOnDragBegan(x,y){
         return true;
     }
-    myOnDragChanged(x, y) {
+    myOnDragChanged(x,y){
         return true;
     }
-    myOnDragEnded(x, y) {
+    myOnDragEnded(x,y){
         return true;
     }
-    myOnRotationBegan(angleInDegrees) {
+    myOnRotationBegan(angleInDegrees){
         return true;
     }
-    myOnRotationChanged(angleInDegrees) {
+    myOnRotationChanged(angleInDegrees){
         return true;
     }
-    myOnRotationEnded(angleInDegrees) {
+    myOnRotationEnded(angleInDegrees){
         return true;
     }
-    myOnScaleBegan(scale) {
+    myOnScaleBegan(scale){
         return true;
     }
-    myOnScaleChanged(scale) {
+    myOnScaleChanged(scale){
         return true;
     }
-    myOnScaleEnded(scale) {
+    myOnScaleEnded(scale){
         return true;
     }
 
 }
 
 class RTVideo extends AR.VideoDrawable {
-    constructor(path, scaleFactor, optionsJSON, replayDrawable = null, repeating = true, trackablename) {
+    constructor(path, scaleFactor, optionsJSON, replayDrawable = null, repeating = true,trackablename) {
         var values = {
             translate: optionsJSON.translate,
             rotate: optionsJSON.rotate,
             scale: optionsJSON.scale,
             onDragBegan: function (x, y) {
-                this.myOnDragBegan(x, y);
+                this.myOnDragBegan(x,y);
                 return true;
             },
             onDragChanged: function (x, y) {
-                this.myOnDragChanged(x, y);
+                this.myOnDragChanged(x,y);
                 return true;
             },
             onDragEnded: function (x, y) {
-                this.myOnDragEnded(x, y);
+                this.myOnDragEnded(x,y);
                 return true;
             },
             onRotationBegan: function (angleInDegrees) {
@@ -889,7 +895,7 @@ class RTVideo extends AR.VideoDrawable {
                 this.onRemoveFromCamAnimations[i].animation.start();
             }
         }
-        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this), 1);
+        allVisibleDrawables.splice(allVisibleDrawables.indexOf(this),1);
         this.trackable.drawables.removeCamDrawable(this);
     }
 
@@ -916,7 +922,8 @@ class RTVideo extends AR.VideoDrawable {
         }
     }
 
-    onLostAnimation() {}
+    onLostAnimation() {
+    }
 
     onClickAnimation() {
         for (var i = 0; i < this.onClickAnimations.length; i++) {
@@ -928,45 +935,43 @@ class RTVideo extends AR.VideoDrawable {
         }
     }
 
-    myOnDragBegan(x, y) {
+    myOnDragBegan(x,y){
         return true;
     }
-    myOnDragChanged(x, y) {
+    myOnDragChanged(x,y){
         return true;
     }
-    myOnDragEnded(x, y) {
+    myOnDragEnded(x,y){
         return true;
     }
-    myOnRotationBegan(angleInDegrees) {
+    myOnRotationBegan(angleInDegrees){
         return true;
     }
-    myOnRotationChanged(angleInDegrees) {
+    myOnRotationChanged(angleInDegrees){
         return true;
     }
-    myOnRotationEnded(angleInDegrees) {
+    myOnRotationEnded(angleInDegrees){
         return true;
     }
-    myOnScaleBegan(scale) {
+    myOnScaleBegan(scale){
         return true;
     }
-    myOnScaleChanged(scale) {
+    myOnScaleChanged(scale){
         return true;
     }
-    myOnScaleEnded(scale) {
+    myOnScaleEnded(scale){
         return true;
     }
 }
 
 
-
-
 function createAppLink(drawable, url) {
-    drawable.onClickAdditions = function () {
+    drawable.onClickAdditions = function () {        
         if (isAndroid()) {
-            document.location = "architectsdk://url_https://www." + url;
+				document.location = "architectsdk://url_https://www." + url;
         } else {
-            window.location.href = "https://" + url;
-        }
+				window.location.href = "https://" + url;
+        }    
     }
 }
 
@@ -976,8 +981,6 @@ function createWebLink(drawable, url) {
         document.location = "architectsdk://url_" + url;
     }
 }
-
-
 
 function createSwapBuild(drawable, buildID, isPrivate, password) {
     if (isPrivate) {
@@ -997,8 +1000,6 @@ function createFullscreen(drawable, offlinevideopath) {
         document.location = "architectsdk://fullscreen_" + offlinevideopath;
     }
 }
-
-
 
 function createPanoImage(drawable, offlinepanopath, onlinepanopath) {
     drawable.onClickAdditions = function () {
@@ -1050,7 +1051,7 @@ function create2DBounceAnim(drawable, length) {
     return sx;
 }
 
-function create2DEaseInOutAnim(drawable, length, startingPoint) {
+function create2DEaseInOutAnim(drawable, length,startingPoint) {
 
     var sx = new AR.PropertyAnimation(drawable, "height", startingPoint, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_CIRC,
@@ -1060,28 +1061,28 @@ function create2DEaseInOutAnim(drawable, length, startingPoint) {
     return sx;
 }
 
-function createOpacityUpAnim(drawable, length) {
+function createOpacityUpAnim(drawable,length){
     return new AR.PropertyAnimation(drawable, "opacity", 0, 1, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_CUBIC
     });
 }
 
-function createOpacityDownAnim(drawable, length) {
+function createOpacityDownAnim(drawable,length){
     return new AR.PropertyAnimation(drawable, "opacity", 1, 0, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_CUBIC
     }, {
-        onFinish: function (drawable) {
-            //drawable.removeFromCam();
-            //drawable.opacity = 1;
-        }
-    });
+		onFinish: function (drawable) {
+			//drawable.removeFromCam();
+			//drawable.opacity = 1;						
+		}
+	});
 }
 
 
 
 
 // Linear
-function create2DLinearAnim(drawable, length, start) {
+function create2DLinearAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.LINEAR
     });
@@ -1091,7 +1092,7 @@ function create2DLinearAnim(drawable, length, start) {
 
 
 // Quad
-function create2DEaseInQuadAnim(drawable, length, start) {
+function create2DEaseInQuadAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_QUAD
     });
@@ -1099,7 +1100,7 @@ function create2DEaseInQuadAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutQuadAnim(drawable, length, start) {
+function create2DEaseOutQuadAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_QUAD
     });
@@ -1107,7 +1108,7 @@ function create2DEaseOutQuadAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutQuadAnim(drawable, length, start) {
+function create2DEaseInOutQuadAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_QUAD
     });
@@ -1115,7 +1116,7 @@ function create2DEaseInOutQuadAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInQuadAnim(drawable, length, start) {
+function create2DEaseOutInQuadAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_QUAD
     });
@@ -1124,7 +1125,7 @@ function create2DEaseOutInQuadAnim(drawable, length, start) {
 }
 
 // Cubic
-function create2DEaseInCubicAnim(drawable, length, start) {
+function create2DEaseInCubicAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_CUBIC
     });
@@ -1132,7 +1133,7 @@ function create2DEaseInCubicAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutCubicAnim(drawable, length, start) {
+function create2DEaseOutCubicAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_CUBIC
     });
@@ -1140,7 +1141,7 @@ function create2DEaseOutCubicAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutCubicAnim(drawable, length, start) {
+function create2DEaseInOutCubicAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_CUBIC
     });
@@ -1149,7 +1150,7 @@ function create2DEaseInOutCubicAnim(drawable, length, start) {
 }
 
 
-function create2DEaseOutInCubicAnim(drawable, length, start) {
+function create2DEaseOutInCubicAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_CUBIC
     });
@@ -1158,7 +1159,7 @@ function create2DEaseOutInCubicAnim(drawable, length, start) {
 }
 
 //Quat
-function create2DEaseInQuatAnim(drawable, length, start) {
+function create2DEaseInQuatAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_QUAT
     });
@@ -1166,7 +1167,7 @@ function create2DEaseInQuatAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutQuatAnim(drawable, length, start) {
+function create2DEaseOutQuatAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_QUAT
     });
@@ -1174,7 +1175,7 @@ function create2DEaseOutQuatAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutQuatAnim(drawable, length, start) {
+function create2DEaseInOutQuatAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_QUAT
     });
@@ -1182,7 +1183,7 @@ function create2DEaseInOutQuatAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInQuatAnim(drawable, length, start) {
+function create2DEaseOutInQuatAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_QUAT
     });
@@ -1191,7 +1192,7 @@ function create2DEaseOutInQuatAnim(drawable, length, start) {
 }
 
 //Quint
-function create2DEaseInQuintAnim(drawable, length, start) {
+function create2DEaseInQuintAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_QUINT
     });
@@ -1199,7 +1200,7 @@ function create2DEaseInQuintAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutQuintAnim(drawable, length, start) {
+function create2DEaseOutQuintAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_QUINT
     });
@@ -1207,7 +1208,7 @@ function create2DEaseOutQuintAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutQuintAnim(drawable, length, start) {
+function create2DEaseInOutQuintAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_QUINT
     });
@@ -1215,7 +1216,7 @@ function create2DEaseInOutQuintAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInQuintAnim(drawable, length, start) {
+function create2DEaseOutInQuintAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_QUINT
     });
@@ -1224,7 +1225,7 @@ function create2DEaseOutInQuintAnim(drawable, length, start) {
 }
 
 //Elastic
-function create2DEaseInElasticAnim(drawable, length, start) {
+function create2DEaseInElasticAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_ELASTIC
     });
@@ -1232,7 +1233,7 @@ function create2DEaseInElasticAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutElasticAnim(drawable, length, start) {
+function create2DEaseOutElasticAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC
     });
@@ -1240,7 +1241,7 @@ function create2DEaseOutElasticAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutElasticAnim(drawable, length, start) {
+function create2DEaseInOutElasticAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_ELASTIC
     });
@@ -1248,7 +1249,7 @@ function create2DEaseInOutElasticAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInElasticAnim(drawable, length, start) {
+function create2DEaseOutInElasticAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_ELASTIC
     });
@@ -1257,7 +1258,7 @@ function create2DEaseOutInElasticAnim(drawable, length, start) {
 }
 
 //Back
-function create2DEaseInBackAnim(drawable, length, start) {
+function create2DEaseInBackAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_BACK
     });
@@ -1265,7 +1266,7 @@ function create2DEaseInBackAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutBackAnim(drawable, length, start) {
+function create2DEaseOutBackAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_BACK
     });
@@ -1273,7 +1274,7 @@ function create2DEaseOutBackAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutBackAnim(drawable, length, start) {
+function create2DEaseInOutBackAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_BACK
     });
@@ -1281,7 +1282,7 @@ function create2DEaseInOutBackAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInBackAnim(drawable, length, start) {
+function create2DEaseOutInBackAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_BACK
     });
@@ -1290,7 +1291,7 @@ function create2DEaseOutInBackAnim(drawable, length, start) {
 }
 
 //Sine
-function create2DEaseInSineAnim(drawable, length, start) {
+function create2DEaseInSineAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_SINE
     });
@@ -1298,7 +1299,7 @@ function create2DEaseInSineAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutSineAnim(drawable, length, start) {
+function create2DEaseOutSineAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_SINE
     });
@@ -1306,7 +1307,7 @@ function create2DEaseOutSineAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutSineAnim(drawable, length, start) {
+function create2DEaseInOutSineAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_SINE
     });
@@ -1314,7 +1315,7 @@ function create2DEaseInOutSineAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInSineAnim(drawable, length, start) {
+function create2DEaseOutInSineAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_SINE
     });
@@ -1323,7 +1324,7 @@ function create2DEaseOutInSineAnim(drawable, length, start) {
 }
 
 //Expo
-function create2DEaseInExpoAnim(drawable, length, start) {
+function create2DEaseInExpoAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_EXPO
     });
@@ -1331,7 +1332,7 @@ function create2DEaseInExpoAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutExpoAnim(drawable, length, start) {
+function create2DEaseOutExpoAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_EXPO
     });
@@ -1339,7 +1340,7 @@ function create2DEaseOutExpoAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutExpoAnim(drawable, length, start) {
+function create2DEaseInOutExpoAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_EXPO
     });
@@ -1347,7 +1348,7 @@ function create2DEaseInOutExpoAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInExpoAnim(drawable, length, start) {
+function create2DEaseOutInExpoAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_EXPO
     });
@@ -1356,7 +1357,7 @@ function create2DEaseOutInExpoAnim(drawable, length, start) {
 }
 
 //Circ
-function create2DEaseInCircAnim(drawable, length, start) {
+function create2DEaseInCircAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_CIRC
     });
@@ -1364,7 +1365,7 @@ function create2DEaseInCircAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutCircAnim(drawable, length, start) {
+function create2DEaseOutCircAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_CIRC
     });
@@ -1372,7 +1373,7 @@ function create2DEaseOutCircAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutCircAnim(drawable, length, start) {
+function create2DEaseInOutCircAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_CIRC
     });
@@ -1380,7 +1381,7 @@ function create2DEaseInOutCircAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInCircAnim(drawable, length, start) {
+function create2DEaseOutInCircAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_CIRC
     });
@@ -1389,7 +1390,7 @@ function create2DEaseOutInCircAnim(drawable, length, start) {
 }
 
 //Bounce
-function create2DEaseInBounceAnim(drawable, length, start) {
+function create2DEaseInBounceAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_BOUNCE
     });
@@ -1397,7 +1398,7 @@ function create2DEaseInBounceAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutBounceAnim(drawable, length, start) {
+function create2DEaseOutBounceAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_BOUNCE
     });
@@ -1405,7 +1406,7 @@ function create2DEaseOutBounceAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseInOutBounceAnim(drawable, length, start) {
+function create2DEaseInOutBounceAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_OUT_BOUNCE
     });
@@ -1413,7 +1414,7 @@ function create2DEaseInOutBounceAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutInBounceAnim(drawable, length, start) {
+function create2DEaseOutInBounceAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_IN_BOUNCE
     });
@@ -1422,7 +1423,7 @@ function create2DEaseOutInBounceAnim(drawable, length, start) {
 }
 
 //Curve
-function create2DEaseInCurveAnim(drawable, length, start) {
+function create2DEaseInCurveAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_IN_CURVE
     });
@@ -1430,7 +1431,7 @@ function create2DEaseInCurveAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseOutCurveAnim(drawable, length, start) {
+function create2DEaseOutCurveAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_OUT_CURVE
     });
@@ -1438,7 +1439,7 @@ function create2DEaseOutCurveAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseSinCurveAnim(drawable, length, start) {
+function create2DEaseSinCurveAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_SIN_CURVE
     });
@@ -1446,7 +1447,7 @@ function create2DEaseSinCurveAnim(drawable, length, start) {
     return sx;
 }
 
-function create2DEaseCosCurveAnim(drawable, length, start) {
+function create2DEaseCosCurveAnim(drawable, length, start){
     var sx = new AR.PropertyAnimation(drawable, "height", start, drawable.height, length, {
         type: AR.CONST.EASING_CURVE_TYPE.EASE_COS_CURVE
     });
@@ -1456,33 +1457,33 @@ function create2DEaseCosCurveAnim(drawable, length, start) {
 
 
 
-function createMoveToPositionAnim(drawable, length, translationX, translationY, translationZ) {
-    var destributeAnimationx = new AR.PropertyAnimation(drawable, "translate.x", drawable.translate.x, translationX, length, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var destributeAnimationy = new AR.PropertyAnimation(drawable, "translate.y", drawable.translate.y, translationY, length, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-    var destributeAnimationz = new AR.PropertyAnimation(drawable, "translate.z", drawable.translate.z, translationZ, length, {
-        type: AR.CONST.EASING_CURVE_TYPE.LINEAR
-    });
-
-    return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [destributeAnimationx, destributeAnimationy, destributeAnimationz]);
+function createMoveToPositionAnim(drawable,length,translationX,translationY,translationZ){
+		var destributeAnimationx = new AR.PropertyAnimation(drawable, "translate.x", drawable.translate.x, translationX, length, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+		var destributeAnimationy = new AR.PropertyAnimation(drawable, "translate.y", drawable.translate.y, translationY, length, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+		var destributeAnimationz = new AR.PropertyAnimation(drawable, "translate.z", drawable.translate.z, translationZ, length, {
+				type: AR.CONST.EASING_CURVE_TYPE.LINEAR
+			});
+			
+		return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [destributeAnimationx, destributeAnimationy, destributeAnimationz]);
 }
 
 
 /*
 function createSequentialAppearAnim (drawables, length) {
-
+    
     var drawableVar = [];
-
+    
     for (var i = 0; i < drawables.length; i++) {
-        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
+        var drawableVar[i] = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);  
     }
-
+    
     //var drawable11 = new AR.PropertyAnimation(drawables[i], "height", 0, drawables[i].height, length);
-    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);
-
+    //var drawable22 = new AR.PropertyAnimation(drawables[1], "height", 0, drawables[1].height, length);    
+    
     return new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.SEQUENTIAL, [drawableVar[0], drawableVar[1]]);
 }
 */
@@ -1580,15 +1581,15 @@ function callAppInterface() {
 function writeOptionsToJSON() {
     var allOptions = "{\"data\":[";
     for (var i = 0; i < allDrawables.length; i++) {
-        if (allOptions.length > 10) {
+        if (allOptions.length>10){
             allOptions += ",";
         }
-        allOptions += "{\"name\":" + JSON.stringify(allDrawables[i].name) + "," +
-            "\"scale\":" + JSON.stringify(allDrawables[i].scale) + "," +
-            "\"translate\":" + JSON.stringify(allDrawables[i].translate) + "," +
-            "\"rotate\":" + JSON.stringify(allDrawables[i].rotate) + "}";
+        allOptions += "{\"name\":"+JSON.stringify(allDrawables[i].name)+"," +
+            "\"scale\":"+JSON.stringify(allDrawables[i].scale)+"," +
+            "\"translate\":"+JSON.stringify(allDrawables[i].translate)+"," +
+            "\"rotate\":"+JSON.stringify(allDrawables[i].rotate)+"}";
     }
-    allOptions += "]}";
+    allOptions+="]}";
 
     var json = JSON.stringify(allOptions);
     alert(json);
@@ -1596,11 +1597,11 @@ function writeOptionsToJSON() {
 }
 
 function makeEditable(drawable) {
-    drawable.myOnDragBegan = function (x, y) {
+    drawable.myOnDragBegan= function (x, y) {
         this.oneFingerGestureAllowed = true;
         return true;
     };
-    drawable.myOnDragChanged = function (x, y) {
+    drawable.myOnDragChanged= function (x, y) {
         if (this.oneFingerGestureAllowed && this.positioningEnabled) {
             if (this.positioningAxisX && this.positioningAxisY) {
                 this.translate.x = this.previousDragValueX + x;
@@ -1608,7 +1609,8 @@ function makeEditable(drawable) {
             } else if (this.positioningAxisX && this.positioningAxisZ) {
                 this.translate.x = this.previousDragValueX + x;
                 this.translate.z = this.previousDragValueZ + y;
-            } else if (this.positioningAxisY && this.positioningAxisZ) {
+            }
+            else if (this.positioningAxisY && this.positioningAxisZ) {
                 this.translate.y = this.previousDragValueY - x;
                 this.translate.z = this.previousDragValueZ + y;
             }
@@ -1616,17 +1618,17 @@ function makeEditable(drawable) {
 
         return true;
     };
-    drawable.myOnDragEnded = function (x, y) {
+    drawable.myOnDragEnded= function (x, y) {
         this.previousDragValueX = this.translate.x;
         this.previousDragValueY = this.translate.y;
         this.previousDragValueZ = this.translate.z;
 
         return true;
     };
-    drawable.myOnRotationBegan = function (angleInDegrees) {
+    drawable.myOnRotationBegan= function (angleInDegrees) {
         return true;
     };
-    drawable.myOnRotationChanged = function (angleInDegrees) {
+    drawable.myOnRotationChanged= function (angleInDegrees) {
         if (this.rotatingEnabled) {
             if (this.rotateAxisX) {
                 this.rotate.x = this.previousRotationValueX - angleInDegrees;
@@ -1638,28 +1640,24 @@ function makeEditable(drawable) {
         }
         return true;
     };
-    drawable.myOnRotationEnded = function (angleInDegrees) {
+    drawable.myOnRotationEnded= function (angleInDegrees) {
         this.previousRotationValueX = this.rotate.x;
         this.previousRotationValueY = this.rotate.y;
         this.previousRotationValueZ = this.rotate.z;
 
         return true;
     };
-    drawable.myOnScaleBegan = function (scale) {
+    drawable.myOnScaleBegan= function (scale) {
         return true;
     };
-    drawable.myOnScaleChanged = function (scale) {
+    drawable.myOnScaleChanged= function (scale) {
         if (this.scalingEnabled) {
             var scaleValue = this.previousScaleValue * scale;
-            this.scale = {
-                x: scaleValue,
-                y: scaleValue,
-                z: scaleValue
-            };
+            this.scale = {x: scaleValue, y: scaleValue, z: scaleValue};
         }
         return true;
     };
-    drawable.myOnScaleEnded = function (scale) {
+    drawable.myOnScaleEnded= function (scale) {
         this.previousScaleValue = this.scale.x;
 
         return true;

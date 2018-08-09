@@ -1,3 +1,6 @@
-var trackable_rhedaMarker14 = new RTTrackable("marker14");
-var Domplatz = new RTVideo("assets/Domplatz.mp4",1,options_Domplatz,null,true,trackable_rhedaMarker14); 
-Domplatz.addToCam();
+var trackable_rhedaMarker02 = new RTTrackable("marker14");
+
+
+var video = new RTVideo("assets/Fuerst.mp4",1,options_Fuerst,null,false,trackable_rhedaMarker02);
+
+video.addToCam();

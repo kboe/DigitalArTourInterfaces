@@ -1,3 +1,6 @@
-var trackable_rhedaMarker11 = new RTTrackable("marker11");
-var Schnittkerhaus = new RTVideo("assets/Schnittkerhaus.mp4",1,options_Schnittkerhaus,null,true,trackable_rhedaMarker11); 
-Schnittkerhaus.addToCam();
+var trackable_rhedaMarker02 = new RTTrackable("marker20");
+
+
+var video = new RTVideo("assets/Fuerst.mp4",1,options_Fuerst,null,false,trackable_rhedaMarker02);
+
+video.addToCam();
