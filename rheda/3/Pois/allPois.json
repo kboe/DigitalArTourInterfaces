@@ -1,0 +1,640 @@
+[
+	{
+		"name" : "Doktorplatz 5",
+		"description" : "Die “Münze”, um 1610 erbaut und als Apotheke und Arztpraxis genutzt.",
+		"locationMapLat" : 51.852107,
+		"locationMapLong" : 8.292081,
+		"thumbnail" : "3/Pois/1/thumbnail.JPG",
+		"markerImage" : "3/Pois/1/markerImage.jpg",
+		"markerIds" : [
+			"marker1"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/1/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/1/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/1/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/1/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Doktorplatz 6",
+		"description" : "Das Gebäude wurde 1716 von Arzt und Kaufmann Hermann Andreas Wilmans erbaut. Das Besondere am Haus ist der Fassadenschmuck.",
+		"locationMapLat" : 51.852107,
+		"locationMapLong" : 8.292081,
+		"thumbnail" : "3/Pois/2/thumbnail.JPG",
+		"markerImage" : "3/Pois/2/markerImage.jpg",
+		"markerIds" : [
+			"marker2"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/2/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/2/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/2/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/2/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Berlinerstraße 6",
+		"description" : "Dieses Mittelflurhaus wurde von Dorothea Susanna Schwenger 1732 erbaut, seit 1997/98 dient es als Hotel und Restaurant.",
+		"locationMapLat" : 51.852177,
+		"locationMapLong" : 8.291794,
+		"thumbnail" : "3/Pois/3/thumbnail.JPG",
+		"markerImage" : "3/Pois/3/markerImage.jpg",
+		"markerIds" : [
+			"marker3"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/3/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/3/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/3/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/3/augmentation/augmentation.json"
+			}
+		]
+	},	
+	{
+		"name" : "Berlinerstraße 22",
+		"description" : "Die Stadtvilla wurde über mehrere Jahre errichtet. Sie ist ein neunachsiger Barockbau mit Mansarddach, klassizistischem Treppenhaus und Gewölbekeller.",
+		"locationMapLat" : 51.85297,
+		"locationMapLong" : 8.292036,
+		"thumbnail" : "3/Pois/4/thumbnail.JPG",
+		"markerImage" : "3/Pois/4/markerImage.jpg",
+		"markerIds" : [
+			"marker4"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/4/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/4/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/4/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/4/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Großer Wall 68",
+		"description" : "Eines der ältesten Fachwerkhäuser Rhedas, das 1564/65 erbaut worden ist.",
+		"locationMapLat" : 51.851846,
+		"locationMapLong" : 8.29349,
+		"thumbnail" : "3/Pois/5/thumbnail.JPG",
+		"markerImage" : "3/Pois/5/markerImage.jpg",
+		"markerIds" : [
+			"marker5"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/5/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/5/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/5/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/5/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Großer Wall 40,42,44",
+		"description" : "Diese Häuser sind Handwerkerhäuser, vor denen sich verschiedene Meisterzeichen der Bewohner befinden.",
+		"locationMapLat" : 51.8519,
+		"locationMapLong" : 8.289604,
+		"thumbnail" : "3/Pois/6/thumbnail.JPG",
+		"markerImage" : "3/Pois/6/markerImage.png",
+						
+		"markerIds" : [
+			"marker6",
+			"marker6a",
+			"marker6b",
+			"marker6d"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/6/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/6/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/6/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/6/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Kleine Straße 9",
+		"description" : "Das Gebäude wurde um 1734 neu aufgerichtet und dient seit 1987 als Leinewebermuseum. Im Nachbarhaus wurde 1907 ein Anbau zur Zigarrenherstellung errichtet.",
+		"locationMapLat" : 51.85348,
+		"locationMapLong" : 8.290803,
+		"thumbnail" : "3/Pois/7/thumbnail.JPG",
+		"markerImage" : "3/Pois/7/markerImage.JPG",
+		"markerIds" : [
+			"marker7",
+			"marker7b"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/7/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/7/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/7/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/7/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Rathausplatz",
+		"description" : "Wilhelm Fontaine stifte 1855 sein Wohnhaus zum 500. Jubiläum der Stadt, um es als Rathaus zu nutzen.",
+		"locationMapLat" : 51.853789,
+		"locationMapLong" : 8.289517,
+		"thumbnail" : "3/Pois/8/thumbnail.JPG",
+		"markerImage" : "3/Pois/8/markerImage.jpg",
+		"markerIds" : [
+			"marker8"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/8/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/8/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/8/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/8/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Nadelstraße 2",
+		"description" : "Dieses Haus wurde 1752 als Pfarrhaus von der evangelischen Gemeinde Rheda erbaut.",
+		"locationMapLat" : 51.853281,
+		"locationMapLong" : 8.290447,
+		"thumbnail" : "3/Pois/9/thumbnail.JPG",
+		"markerImage" : "3/Pois/9/markerImage.JPG",
+		"markerIds" : [
+			"marker9"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/9/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/9/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/9/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/9/augmentation/augmentation.json"
+			}
+		]
+	},	
+	{
+		"name" : "Nadelstraße 6",
+		"description" : "Dieses Gebäude ist ein Beispiel für ein Kleinsthaus. Das Haus liegt an der ältesten Straße Rhedas.",
+		"locationMapLat" : 51.853125,
+		"locationMapLong" : 8.290773,
+		"thumbnail" : "3/Pois/10/thumbnail.JPG",
+		"markerImage" : "3/Pois/10/markerImage.jpg",
+		"markerIds" : [
+			"marker10"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/10/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/10/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/10/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/10/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Hoppenstraße 11",
+		"description" : "Das schmalste Haus in Rheda. Es hat ein Außenmaß von 3,40 m und wurde 1600 von Hans Billerbeck errichtet.",
+		"locationMapLat" : 51.85348,
+		"locationMapLong" : 8.293323,
+		"thumbnail" : "3/Pois/11/thumbnail.JPG",
+		"markerImage" : "3/Pois/11/markerImage.JPG",
+		"markerIds" : [
+			"marker11"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/11/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/11/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/11/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/11/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Wilhelmstraße 20a",
+		"description" : "Dieses stattliche Haus wurde 1926 vom jüdischen Wäschefabrikant Ernst Weinberg errichtet.",
+		"locationMapLat" : 51.855208,
+		"locationMapLong" : 8.290773,
+		"thumbnail" : "3/Pois/12/thumbnail.JPG",
+		"markerImage" : "3/Pois/12/markerImage.jpg",
+		"markerIds" : [
+			"marker12"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/12/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/12/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/12/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/12/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Wilhelmstraße 30",
+		"description" : "Das Fachwerktraufenhaus mit Schmuckverschieferungen wurde 1834 als erste katholische Volksschule erbaut.",
+		"locationMapLat" : 51.855268,
+		"locationMapLong" : 8.291901,
+		"thumbnail" : "3/Pois/13/thumbnail.jpg",
+		"markerImage" : "3/Pois/13/markerImage.jpg",
+		"markerIds" : [
+			"marker13"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/13/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/13/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/13/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/13/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Domhof 1",
+		"description" : "Dieses Hallenhaus wurde 1616 von Eberhard Huck errichtet. Seit 1986 steht dieses Gebäude unter Denkmalschutz.",
+		"locationMapLat" : 51.853125,
+		"locationMapLong" : 8.29349,
+		"thumbnail" : "3/Pois/14/thumbnail.JPG",
+		"markerImage" : "3/Pois/14/markerImage.jpg",
+		"markerIds" : [
+			"marker14"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/14/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/14/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/14/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/14/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Berlinerstraße 57",
+		"description" : "Johann Hermann Schnittker lässt 1867 ein Haus in typischer bürgerlicher Bauweise errichten.",
+		"locationMapLat" : 51.854492,
+		"locationMapLong" : 8.292952,
+		"thumbnail" : "3/Pois/15/thumbnail.JPG",
+		"markerImage" : "3/Pois/15/markerImage.jpg",
+		"markerIds" : [
+			"marker15"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/15/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/15/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/15/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/15/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Rathausplatz 4",
+		"description" : "1326 wurde die gotische “Heilig-Blut-Kapelle” gebaut, ab 1527 wurde sie im Zuge der Reformation evangelisch.",
+		"locationMapLat" : 51.853744,
+		"locationMapLong" : 8.290604,
+		"thumbnail" : "3/Pois/17/thumbnail.JPG",
+		"markerImage" : "3/Pois/17/markerImage.jpg",
+		"markerIds" : [
+			"marker17"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/17/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/17/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/17/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/17/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Wilhelmstraße 39",
+		"description" : "Diese Kirche wurde 1911/13 als Pfarrkirche St. Clemens errichtet.",
+		"locationMapLat" : 51.85536,
+		"locationMapLong" : 8.293645,
+		"thumbnail" : "3/Pois/18/thumbnail.JPG",
+		"markerImage" : "3/Pois/18/markerImage.jpg",
+		"markerIds" : [
+			"marker18"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/18/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/18/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/18/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/18/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Steinweg 1",
+		"description" : "1827 wurde dieses Haus vom Juden Abraham Leser gebaut. Seit dem Erwerb vom Fürsten 1846 wohnen dort Angestellte der Fürstenfamilie.",
+		"locationMapLat" : 51.851787,
+		"locationMapLong" : 8.292825,
+		"thumbnail" : "3/Pois/19/thumbnail.JPG",
+		"markerImage" : "3/Pois/19/markerImage.jpg",
+		"markerIds" : [
+			"marker19"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/19/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/19/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/19/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/19/augmentation/augmentation.json"
+			}
+		]
+	},
+	{
+		"name" : "Schloss Rheda",
+		"description" : "Das Schloss ist eine Wasserburg aus dem 12. Jhd., sie befindet sich im Besitzer der Familie Bentheim-Tecklenburg.",
+		"locationMapLat" : 51.850929,
+		"locationMapLong" : 8.29582,
+		"thumbnail" : "3/Pois/20/thumbnail.jpg",
+		"markerImage" : "3/Pois/20/markerImage.jpg",
+						
+		"markerIds" : [
+			"marker20",
+			"marker20a",
+			"marker20b",
+			"marker20c",
+			"marker20d"
+		],
+		"contents" : [
+			{
+				"name" : "Sprecher",
+				"contentType" : "AUDIO",
+				"mediaPath" : "3/Pois/20/audio.json"
+			},
+			{
+				"name" : "Beschreibungstext",
+				"contentType" : "TEXT",
+				"mediaPath" : "3/Pois/20/description.json"
+			},	
+			{
+				"name" : "Galery",
+				"contentType" : "GALERY",
+				"mediaPath" : "3/Pois/20/galery/galery.json" 
+			},
+			{
+				"name" : "3dAnimation",
+				"contentType" : "WIKITUDE_AUGMENTATION",
+				"mediaPath" : "3/Pois/20/augmentation/augmentation.json"
+			}
+		]
+	},
+
+]
